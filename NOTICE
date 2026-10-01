@@ -1,0 +1,36 @@
+kp-1y-well-ordering
+Copyright (c) 2026 zball-bz
+
+The contents of this repository are licensed under the MIT License (see LICENSE),
+with the following exceptions and attributions.
+
+1. The paper (not covered by the MIT License)
+
+   docs/1Y-Well-Ordering-KP-Simplified.pdf and its extracted text paper.txt
+   ("A Short Proof of 1-Y Well-Ordering in KP with ω1", simplified version,
+   12 September 2026) were shared by their author, the actual prover of the
+   result, in a public instant-messaging group, without any explicit license.
+   They are included only as the reference for the statement and proof being
+   formalized. All rights in the paper belong to its original author. Nothing
+   in this repository grants any license to the paper.
+
+2. Material derived from 1Y-Well-Ordering-Lean (Apache License 2.0)
+
+   The 1-Y expansion algorithm and the structure of the finite combinatorial
+   proofs formalized under KP1Y/ were ported from
+     https://github.com/Phyrion1343/1Y-Well-Ordering-Lean
+     (snapshot 6533b2975f3cafb3582dc8f8127e9ea7144d7e69),
+   which is licensed under the Apache License, Version 2.0; a copy of that
+   license is in LICENSES/Apache-2.0.txt. The ported material has been modified:
+   the host-Lean definitions and proofs were rewritten as definitions and
+   proofs inside arbitrary models of the object theory KPω. The original
+   project's license terms continue to apply to the portions derived from it.
+
+3. YesMetaZFC (not included)
+
+   The first-order logic and set-theory library YesMetaZFC is not part of this
+   repository. scripts/fetch-yesmetazfc.sh downloads it from
+     https://github.com/EgoFakeFantasy/BMS-Well-Ordering-Lean
+     (commit bae7e3d741f24a56d80da9b99c1345562cd10c2d)
+   and applies one recorded local change. That snapshot contains no license
+   file; this repository's license does not cover it and grants no rights in it.
