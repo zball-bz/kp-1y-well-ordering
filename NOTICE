@@ -8,11 +8,12 @@ with the following exceptions and attributions.
 
    docs/1Y-Well-Ordering-KP-Simplified.pdf and its extracted text paper.txt
    ("A Short Proof of 1-Y Well-Ordering in KP with ω1", simplified version,
-   12 September 2026) were shared by their author, the actual prover of the
-   result, in a public instant-messaging group, without any explicit license.
-   They are included only as the reference for the statement and proof being
-   formalized. All rights in the paper belong to its original author. Nothing
-   in this repository grants any license to the paper.
+   12 September 2026) were shared by their author, test_alpha0 (the actual
+   prover of the result), in a public instant-messaging group, without any
+   explicit license. They are included only as the reference for the
+   statement and proof being formalized. All rights in the paper belong to
+   its original author, test_alpha0. Nothing in this repository grants any
+   license to the paper.
 
 2. Material derived from 1Y-Well-Ordering-Lean (Apache License 2.0)
 

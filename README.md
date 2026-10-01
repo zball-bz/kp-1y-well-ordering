@@ -2,7 +2,7 @@
 
 This repository is a complete Lean 4 formalization of the main theorem of
 [*A Short Proof of 1-Y Well-Ordering in KP with ω₁*](docs/1Y-Well-Ordering-KP-Simplified.pdf)
-(text: [`paper.txt`](paper.txt); shared by its author, all rights reserved to the author — see
+(text: [`paper.txt`](paper.txt); shared by its author test_alpha0, all rights reserved to the author — see
 [License](#license)). The theorem is proved **inside the object theory**: the final
 result is a Hilbert-style derivation, in the pure ∈ language, from the axioms of KPω.
 
@@ -113,9 +113,9 @@ The formalization, scripts and documentation in this repository are released und
 [MIT License](LICENSE), with the exceptions below (details in [`NOTICE`](NOTICE)):
 
 * **The paper is not covered.** `docs/1Y-Well-Ordering-KP-Simplified.pdf` and `paper.txt` were shared
-  by their author, the actual prover, in a public instant-messaging group without any explicit
+  by their author, test_alpha0 (the actual prover), in a public instant-messaging group without any explicit
   license. They are included only as the reference for the formalized statement; all rights belong
-  to the original author.
+  to the original author, test_alpha0.
 * **Ported material keeps its attribution.** The 1-Y algorithm and the structure of the finite proofs
   were ported, with modifications, from
   [Phyrion1343/1Y-Well-Ordering-Lean](https://github.com/Phyrion1343/1Y-Well-Ordering-Lean), which is
