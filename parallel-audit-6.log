@@ -1,0 +1,2 @@
+PASS: 2538 declarations; only propext, Classical.choice, Quot.sound.
+{"modules": 418, "strict_fresh": 416, "audit_fresh": true, "audit": 2538, "tasks": 81, "remaining": 25}

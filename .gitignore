@@ -1,0 +1,14 @@
+# Build output
+.lake/
+# Third-party dependency: fetched by scripts/fetch-yesmetazfc.sh (no upstream license; not redistributed)
+third_party/YesMetaZFC/
+# Per-module check logs (mostly empty; stage logs and strict-stage/results.json record the outcomes)
+*-check.log
+KP1Y-root-check.log
+strict-stage/*.log
+build.log
+OneYOrdinaryCanonical-handoff.log
+# Rendered paper pages (the PDF is in docs/)
+page-*.png
+# Python caches
+__pycache__/

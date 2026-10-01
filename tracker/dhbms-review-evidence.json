@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/koteitan/dh-bms-wf-formal",
+  "commit": "e1849485ee1d54f92dc4eb42ee93b702c71e67a9",
+  "date": "2026-09-14",
+  "scope": "source-level theory-strength and reuse audit; independent second-agent review of KP-related modules",
+  "full_build_run": false,
+  "kernel_audit_rerun": false,
+  "source_scan": {
+    "files": 65,
+    "lines": 25838,
+    "axiom_declarations": 0,
+    "opaque_declarations": 0,
+    "sorry_admit_native_decide_matches": 0
+  },
+  "report": "DHBMS-KP-REVIEW.md",
+  "files": {
+    "lean/Bm4/Defs.lean": "249a4a9c9dd656eb819c57a39b7fddd171335fb0f427fd19d2ecba2483a368b8",
+    "lean/Bm4/Main.lean": "584e599c60dadd7a451e9b342e7b822537b0fef904ea5b2d01f0c230727fe683",
+    "lean/Bm4/Label.lean": "b534ff37a1383384bd870dd3fe6302d3fa52651f3ea6fc1eef954e6f437e00fd",
+    "lean/Bm4/SetTheory/L.lean": "d5465251cdb50eda3597704c7b5782e9580b2db74cbe4057d086d871140fcb69",
+    "lean/Bm4/SetTheory/Omega1.lean": "4eda29475246ff21694d3ac9db44874a049092bd49f5a59280ca7ec430fd25c0",
+    "lean/Bm4/SetTheory/Skolem.lean": "2f7f2c4b97d0196516350b4467a89d14297751a7253e9b4debf0fec97368f030",
+    "lean/Bm4/SetTheory/Stable.lean": "828a6bafa56461ce4166bdf01c6e6e911a9fef6aa56bb9fc29db906130bb9873",
+    "lean/Bm4/SetTheory/Reflect.lean": "50295acfe94c83c9bdc2650eaa1e48c00a76a8b0eb02e0c6b71268d79e6759a8",
+    "lean/Bm4/SetTheory/KPAx.lean": "086a04b33b091dfdaf9bb46ff2a3ae41551d37f14a5cd0f15bea4d442420ded5",
+    "lean/Bm4/SetTheory/KPSat.lean": "ba27b520b3b4983100a4b9c8f0c91ca4620bcd5d27e3aabbc3cd142abd3f605e",
+    "lean/Bm4/SetTheory/AdmKP.lean": "e9d307e67d4dacd6fa5a76227e0f8e20fcad0bd710481e221c4344c4c83d69e3",
+    "lean/Bm4/SetTheory/Fm.lean": "2931b64fc2c7c7ccfb04f83f589b00f1e6555104d6468ef0feb7efc366bed25a",
+    "lean/Bm4/SetTheory/HF.lean": "a4e4f1041287d01e87b4cc50f6f113ca8a6b615284497536cef39d6c3d2f1dbc",
+    "lean/Bm4/SetTheory/Recursion.lean": "bbb4d44e79df99d9dd9dd623199110a8f179d0c163e8c72044bedb1844211b5c",
+    "lean/Bm4/SetTheory/SatInL.lean": "7699d42b6fae3f72e1d191935291c0ff43b1dc6d4ae04e99f3ebaceee1c5887f",
+    "lean/Bm4/SetTheory/LCodeEx.lean": "3fedbe5d7f2aa94216b4df15f6434d2c97d16ea85e08a6027af817fe70976e01",
+    "plan/formalization-detours.md": "0f86e81548d441907ab869fc82e4e035d4c74ba15ec2794bbfbe7d38b6af7fd0"
+  }
+}

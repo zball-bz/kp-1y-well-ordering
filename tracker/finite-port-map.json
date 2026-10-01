@@ -1,0 +1,3146 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-13",
+  "status": "source_review_complete_object_port_not_implemented",
+  "source_root": "/home/dev/ggg/1Y-Well-Ordering-Lean/formalization",
+  "source_commit": "6533b2975f3cafb3582dc8f8127e9ea7144d7e69",
+  "scope": {
+    "target": "OneY.RootIndexed.expand_lastRepresentation_lower",
+    "no_rebuild": true,
+    "no_original_modifications": true,
+    "theorem_edges_are": "source-body references reviewed by a human-level proof audit, not an exported kernel constant dependency graph"
+  },
+  "main_finding": {
+    "requires_wf_zero_y": false,
+    "requires_wf_bm4": false,
+    "finite_matrix_reuse_required": true,
+    "uniform_internal_omega_port_required": true,
+    "justification": "The finite lowering proof consumes finite reflection and finite copying/rebuild lemmas. The BM4 well-foundedness transfer declaration is an unused side branch."
+  },
+  "symbols": [
+    {
+      "name": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "source": "OneY/RootIndexed/ExpansionWellFounded.lean",
+      "line": 54,
+      "task": "Y06",
+      "classification": "finite_descent"
+    },
+    {
+      "name": "OneY.RootIndexed.actual_expansion_wellFounded",
+      "source": "OneY/RootIndexed/ExpansionWellFounded.lean",
+      "line": 133,
+      "task": "O01",
+      "classification": "host_well_founded_transfer"
+    },
+    {
+      "name": "OneY.RootIndexed.copied_diagrams_bounded",
+      "source": "OneY/RootIndexed/ActualScheme.lean",
+      "line": 80,
+      "task": "Y04b",
+      "classification": "finite_reflection_iteration"
+    },
+    {
+      "name": "OneY.RootIndexed.actualBlockScheme",
+      "source": "OneY/RootIndexed/ActualScheme.lean",
+      "line": 18,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.initial_facts_hold",
+      "source": "OneY/RootIndexed/ActualScheme.lean",
+      "line": 40,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.initial_templates_hold",
+      "source": "OneY/RootIndexed/ActualScheme.lean",
+      "line": 53,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.initial_control_holds",
+      "source": "OneY/RootIndexed/ActualScheme.lean",
+      "line": 66,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.FiniteReflection",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 301,
+      "task": "Y04b",
+      "classification": "semantic_parameter"
+    },
+    {
+      "name": "OneY.RootIndexed.blockScheme_bounded_representations",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 401,
+      "task": "Y04b",
+      "classification": "natural_induction"
+    },
+    {
+      "name": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 320,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.representation_splice",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 174,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.reservoir_splice",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 239,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.virtual_demands_from_templates",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 256,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.admissible_of_root_position",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 285,
+      "task": "Y04b",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.representation_prefix",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 461,
+      "task": "Y06",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.proper_prefix_lowers_last_label",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 486,
+      "task": "Y06",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.last_label_of_bounded_representation",
+      "source": "OneY/RootIndexed/Representation.lean",
+      "line": 479,
+      "task": "Y06",
+      "classification": "finite_semantics"
+    },
+    {
+      "name": "OneY.RootIndexed.actual_splice_geometry",
+      "source": "OneY/RootIndexed/SpliceGeometry.lean",
+      "line": 77,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.expanded_nonroot_source",
+      "source": "OneY/RootIndexed/SpliceGeometry.lean",
+      "line": 25,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.expanded_root_source",
+      "source": "OneY/RootIndexed/SpliceGeometry.lean",
+      "line": 54,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.copyNeeds_virtual",
+      "source": "OneY/RootIndexed/VirtualNeeds.lean",
+      "line": 42,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.copyNeeds_levels",
+      "source": "OneY/RootIndexed/CopyDiagram.lean",
+      "line": 163,
+      "task": "Y04a",
+      "classification": "finite_geometry"
+    },
+    {
+      "name": "OneY.RootIndexed.mountainDiagram",
+      "source": "OneY/RootIndexed/Diagram.lean",
+      "line": 58,
+      "task": "Y02c",
+      "classification": "finite_diagram"
+    },
+    {
+      "name": "OneY.RootIndexed.diagram_relations_iff",
+      "source": "OneY/RootIndexed/Diagram.lean",
+      "line": 74,
+      "task": "Y02c",
+      "classification": "finite_diagram"
+    },
+    {
+      "name": "OneY.RootIndexed.sequenceDiagram_take_isPrefix",
+      "source": "OneY/RootIndexed/Prefix.lean",
+      "line": 38,
+      "task": "Y02c",
+      "classification": "finite_diagram"
+    },
+    {
+      "name": "OneY.RootIndexed.expandValues_diagram_of_badRoot",
+      "source": "OneY/ExpansionCanonical.lean",
+      "line": 113,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.RootIndexed.reconstructedValues_diagram",
+      "source": "OneY/ExpansionCanonical.lean",
+      "line": 100,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.expandValues_of_badRoot",
+      "source": "OneY/ExpansionRebuildPrefix.lean",
+      "line": 17,
+      "task": "Y05b",
+      "classification": "actual_algorithm"
+    },
+    {
+      "name": "OneY.RootIndexed.reconstructedValues_diagram_isPrefix_of_height_bound",
+      "source": "OneY/ExpansionRebuildPrefix.lean",
+      "line": 91,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.assemble_expanded_sequence_lower",
+      "source": "OneY/LowerTowerRebuild.lean",
+      "line": 166,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.lowerTowerRooted_select_linear",
+      "source": "OneY/LowerTowerRebuild.lean",
+      "line": 128,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.lowerTowerRooted_layers_mountain",
+      "source": "OneY/LowerTowerRebuild.lean",
+      "line": 112,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.lowerTowerBase_select_external",
+      "source": "OneY/LowerTowerRebuild.lean",
+      "line": 44,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.lowerTowerBase_rawExtract_next",
+      "source": "OneY/LowerTowerRebuild.lean",
+      "line": 63,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.lowerTower_inputs",
+      "source": "OneY/LowerTowerInputs.lean",
+      "line": 134,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.badAtTerminal_restrictedParent",
+      "source": "OneY/TerminalCopyComplete.lean",
+      "line": 13,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.badAtTerminalBase_select_external",
+      "source": "OneY/TerminalCopyExternal.lean",
+      "line": 50,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.badAtTerminal_restrictedParent_external",
+      "source": "OneY/TerminalCopyExternal.lean",
+      "line": 7,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.badAtTerminal_external_seam_low",
+      "source": "OneY/TerminalCopyExternalSeam.lean",
+      "line": 20,
+      "task": "Y05b",
+      "classification": "canonical_rebuild"
+    },
+    {
+      "name": "OneY.Numeric.badAtTerminalBase_seam_order",
+      "source": "OneY/TerminalCopySeamComparison.lean",
+      "line": 65,
+      "task": "Y03b",
+      "classification": "finite_comparison"
+    },
+    {
+      "name": "OneY.NumericFrame.seam_keyLE",
+      "source": "OneY/TerminalCopySeamComparison.lean",
+      "line": 9,
+      "task": "Y03b",
+      "classification": "finite_comparison"
+    },
+    {
+      "name": "OneY.NumericFrame.expanded_entry",
+      "source": "OneY/TerminalFrameDepths.lean",
+      "line": 23,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.NumericFrame.expanded_relative_structure",
+      "source": "OneY/TerminalFrame.lean",
+      "line": 65,
+      "task": "Y03b",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.NumericFrame.maximalParentRow_eq",
+      "source": "OneY/TerminalFrame.lean",
+      "line": 18,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.NumericFrame.expanded_parent_parentCopy",
+      "source": "OneY/TerminalFrameParents.lean",
+      "line": 40,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.ForestFrame.raw_parent",
+      "source": "OneY/ForestFrameMatrix.lean",
+      "line": 44,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.RelativeBlocker.relative_structural_expand",
+      "source": "OneY/RelativeBlocker.lean",
+      "line": 524,
+      "task": "Y03b",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.RelativeBlocker.aboveS_expand_of_context",
+      "source": "OneY/RelativeBlocker.lean",
+      "line": 335,
+      "task": "Y03b",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.RelativeBlocker.relative_decodeTower_reconstruct",
+      "source": "OneY/RelativeBlocker.lean",
+      "line": 441,
+      "task": "Y03b",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "OneY.RelativeBlocker.framedStep_wellFounded",
+      "source": "OneY/RelativeBlocker.lean",
+      "line": 573,
+      "task": "optional_0Y",
+      "classification": "unused_well_founded_branch"
+    },
+    {
+      "name": "ZeroY.BMS.depthRegular_expand",
+      "source": "ZeroY/Structural/DepthExpansion.lean",
+      "line": 145,
+      "task": "Y03b",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "ZeroY.BMS.parent_copyColumn_nonroot",
+      "source": "ZeroY/Structural/ExpansionParents.lean",
+      "line": 317,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "ZeroY.BMS.parent_expand_prefix",
+      "source": "ZeroY/Structural/ExpansionParents.lean",
+      "line": 14,
+      "task": "Y03a",
+      "classification": "finite_matrix"
+    },
+    {
+      "name": "ZeroY.BMS.newroot_suffix_lt_ghost",
+      "source": "ZeroY/Structural/Expansion.lean",
+      "line": 29,
+      "task": "Y03b",
+      "classification": "finite_comparison"
+    },
+    {
+      "name": "ZeroY.BMS.suffix_copyColumn_eq_lifted",
+      "source": "ZeroY/Structural/Expansion.lean",
+      "line": 14,
+      "task": "Y03b",
+      "classification": "finite_comparison"
+    },
+    {
+      "name": "ZeroY.BMS.step_wellFounded_any",
+      "source": "ZeroY/BMS/AnyArray.lean",
+      "line": 99,
+      "task": "optional_0Y",
+      "classification": "unused_well_founded_branch"
+    },
+    {
+      "name": "OneY.Reconstruction.value",
+      "source": "OneY/Reconstruction.lean",
+      "line": 17,
+      "task": "Y05a",
+      "classification": "finite_column_recursion"
+    },
+    {
+      "name": "OneY.Reconstruction.reconstructs_unique",
+      "source": "OneY/Reconstruction.lean",
+      "line": 157,
+      "task": "Y05a",
+      "classification": "finite_column_induction"
+    },
+    {
+      "name": "OneY.Reconstruction.valueFuel",
+      "source": "OneY/ReconstructionCompute.lean",
+      "line": 13,
+      "task": "Y05a",
+      "classification": "finite_fuel_algorithm"
+    },
+    {
+      "name": "OneY.Reconstruction.value_eq_compute",
+      "source": "OneY/ReconstructionCompute.lean",
+      "line": 43,
+      "task": "Y05a",
+      "classification": "host_algorithm_correspondence"
+    },
+    {
+      "name": "OneY.Numeric.expandValues_eq_compute",
+      "source": "OneY/ExpansionCompute.lean",
+      "line": 45,
+      "task": "Y05b",
+      "classification": "host_algorithm_correspondence"
+    },
+    {
+      "name": "OneY.Numeric.expandValues",
+      "source": "OneY/Expansion.lean",
+      "line": 46,
+      "task": "Y05b",
+      "classification": "actual_algorithm"
+    },
+    {
+      "name": "OneY.Numeric.expandValues_of_no_parent",
+      "source": "OneY/Expansion.lean",
+      "line": 66,
+      "task": "Y05b",
+      "classification": "actual_algorithm"
+    },
+    {
+      "name": "OneY.Numeric.findBadRoot_sound",
+      "source": "OneY/RootSearch.lean",
+      "line": 58,
+      "task": "Y02c",
+      "classification": "bounded_search"
+    },
+    {
+      "name": "OneY.Numeric.findBadRoot_none_iff",
+      "source": "OneY/RootSearch.lean",
+      "line": 73,
+      "task": "Y02c",
+      "classification": "bounded_search"
+    },
+    {
+      "name": "OneY.Numeric.rootAddress_unique",
+      "source": "OneY/RootSearch.lean",
+      "line": 65,
+      "task": "Y02c",
+      "classification": "finite_uniqueness"
+    },
+    {
+      "name": "OneY.Numeric.restrictedParent_some_iff",
+      "source": "OneY/Numeric.lean",
+      "line": 34,
+      "task": "Y02a",
+      "classification": "bounded_search"
+    },
+    {
+      "name": "OneY.Numeric.rows_value_budget",
+      "source": "OneY/Numeric.lean",
+      "line": 120,
+      "task": "Y02b",
+      "classification": "natural_induction"
+    },
+    {
+      "name": "OneY.Numeric.rows_zero_of_bound",
+      "source": "OneY/Numeric.lean",
+      "line": 133,
+      "task": "Y02b",
+      "classification": "natural_induction"
+    },
+    {
+      "name": "OneY.Numeric.layers_value_budget",
+      "source": "OneY/Extraction.lean",
+      "line": 55,
+      "task": "Y02c",
+      "classification": "natural_induction"
+    },
+    {
+      "name": "OneY.Numeric.layers_one_of_bound",
+      "source": "OneY/Extraction.lean",
+      "line": 68,
+      "task": "Y02c",
+      "classification": "natural_induction"
+    },
+    {
+      "name": "OneY.Numeric.sequenceBound",
+      "source": "OneY/Extraction.lean",
+      "line": 76,
+      "task": "Y02c",
+      "classification": "finite_bound"
+    },
+    {
+      "name": "OneY.Pseudo.Candidate",
+      "source": "OneY/Pseudo.lean",
+      "line": 16,
+      "task": "Y02b",
+      "classification": "actual_algorithm"
+    },
+    {
+      "name": "OneY.Pseudo.parent",
+      "source": "OneY/Pseudo.lean",
+      "line": 31,
+      "task": "Y02b",
+      "classification": "bounded_search"
+    },
+    {
+      "name": "OneY.CopyCoordinates.Context.source",
+      "source": "OneY/CopyCoordinates.lean",
+      "line": 21,
+      "task": "Y04a",
+      "classification": "finite_arithmetic"
+    },
+    {
+      "name": "OneY.CopyCoordinates.Context.block",
+      "source": "OneY/CopyCoordinates.lean",
+      "line": 23,
+      "task": "Y04a",
+      "classification": "finite_arithmetic"
+    },
+    {
+      "name": "OneY.CopyCoordinates.Context.parentCopy",
+      "source": "OneY/CopyCoordinates.lean",
+      "line": 25,
+      "task": "Y04a",
+      "classification": "finite_arithmetic"
+    },
+    {
+      "name": "ZeroY.Legal",
+      "source": "ZeroY/Syntax.lean",
+      "line": 15,
+      "task": "Y01a",
+      "classification": "literal_statement"
+    },
+    {
+      "name": "ZeroY.Expr",
+      "source": "ZeroY/Syntax.lean",
+      "line": 19,
+      "task": "Y01a",
+      "classification": "literal_statement"
+    }
+  ],
+  "reviewed_call_edges": [
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.copied_diagrams_bounded",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.expandValues_diagram_of_badRoot",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.Numeric.expandValues_of_no_parent",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.Numeric.findBadRoot_sound",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.Numeric.findBadRoot_none_iff",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.sequenceDiagram_take_isPrefix",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.proper_prefix_lowers_last_label",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.representation_prefix",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expand_lastRepresentation_lower",
+      "to": "OneY.RootIndexed.last_label_of_bounded_representation",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.copied_diagrams_bounded",
+      "to": "OneY.RootIndexed.actualBlockScheme",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.copied_diagrams_bounded",
+      "to": "OneY.RootIndexed.blockScheme_bounded_representations",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.copied_diagrams_bounded",
+      "to": "OneY.RootIndexed.initial_facts_hold",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.copied_diagrams_bounded",
+      "to": "OneY.RootIndexed.initial_templates_hold",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.copied_diagrams_bounded",
+      "to": "OneY.RootIndexed.initial_control_holds",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.actualBlockScheme",
+      "to": "OneY.RootIndexed.actual_splice_geometry",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.actualBlockScheme",
+      "to": "OneY.RootIndexed.copyNeeds_virtual",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.actualBlockScheme",
+      "to": "OneY.RootIndexed.copyNeeds_levels",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.blockScheme_bounded_representations",
+      "to": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "to": "OneY.RootIndexed.representation_splice",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "to": "OneY.RootIndexed.reservoir_splice",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "to": "OneY.RootIndexed.virtual_demands_from_templates",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "to": "OneY.RootIndexed.admissible_of_root_position",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.actual_splice_geometry",
+      "to": "OneY.RootIndexed.expanded_nonroot_source",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.actual_splice_geometry",
+      "to": "OneY.RootIndexed.expanded_root_source",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expandValues_diagram_of_badRoot",
+      "to": "OneY.Numeric.expandValues_of_badRoot",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.expandValues_diagram_of_badRoot",
+      "to": "OneY.RootIndexed.reconstructedValues_diagram",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.reconstructedValues_diagram",
+      "to": "OneY.RootIndexed.reconstructedValues_diagram_isPrefix_of_height_bound",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.reconstructedValues_diagram",
+      "to": "OneY.Numeric.assemble_expanded_sequence_lower",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.reconstructedValues_diagram",
+      "to": "OneY.Numeric.lowerTowerRooted_select_linear",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RootIndexed.reconstructedValues_diagram",
+      "to": "OneY.Numeric.lowerTowerRooted_layers_mountain",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.lowerTowerRooted_select_linear",
+      "to": "OneY.Numeric.lowerTowerBase_select_external",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.lowerTowerBase_select_external",
+      "to": "OneY.Numeric.badAtTerminalBase_select_external",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.badAtTerminalBase_select_external",
+      "to": "OneY.Numeric.badAtTerminal_restrictedParent_external",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.badAtTerminal_restrictedParent_external",
+      "to": "OneY.Numeric.badAtTerminal_external_seam_low",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.badAtTerminal_external_seam_low",
+      "to": "OneY.Numeric.badAtTerminalBase_seam_order",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.Numeric.badAtTerminalBase_seam_order",
+      "to": "OneY.NumericFrame.seam_keyLE",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.seam_keyLE",
+      "to": "OneY.NumericFrame.expanded_entry",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.seam_keyLE",
+      "to": "ZeroY.BMS.newroot_suffix_lt_ghost",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.seam_keyLE",
+      "to": "ZeroY.BMS.suffix_copyColumn_eq_lifted",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.expanded_entry",
+      "to": "OneY.NumericFrame.expanded_relative_structure",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.expanded_relative_structure",
+      "to": "OneY.RelativeBlocker.relative_structural_expand",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RelativeBlocker.relative_structural_expand",
+      "to": "ZeroY.BMS.depthRegular_expand",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.RelativeBlocker.relative_structural_expand",
+      "to": "OneY.RelativeBlocker.aboveS_expand_of_context",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.expanded_parent_parentCopy",
+      "to": "ZeroY.BMS.parent_copyColumn_nonroot",
+      "evidence": "read_source_body"
+    },
+    {
+      "from": "OneY.NumericFrame.expanded_parent_parentCopy",
+      "to": "ZeroY.BMS.parent_expand_prefix",
+      "evidence": "read_source_body"
+    }
+  ],
+  "semantic_parameter_edges": [
+    {
+      "from": "OneY.RootIndexed.exists_bounded_representation_splice",
+      "to": "OneY.RootIndexed.FiniteReflection",
+      "via": "reflection argument"
+    }
+  ],
+  "import_graph": {
+    "scope": "local OneY/ZeroY modules; external Std/Lean/YesMetaZFC dependencies omitted",
+    "not_a_theorem_dependency_graph": true,
+    "module_count": 154,
+    "line_count": 23397,
+    "modules": [
+      {
+        "module": "OneY.ActiveGeometry",
+        "path": "OneY/ActiveGeometry.lean",
+        "lines": 104,
+        "sha256": "cef48b41e7797934fda64557f09dd5cc21c489e2b8d80a4dc5aec403cb09335b"
+      },
+      {
+        "module": "OneY.BadRoot",
+        "path": "OneY/BadRoot.lean",
+        "lines": 141,
+        "sha256": "a66230f6669614937d943c503e52b4ff581bdd5cfc15228a3a6a33a21d2c37b4"
+      },
+      {
+        "module": "OneY.Build",
+        "path": "OneY/Build.lean",
+        "lines": 73,
+        "sha256": "7019863d4ff59d2ce47c5fdd27c88d4dc4a0dd883663ca197c766e61d600c563"
+      },
+      {
+        "module": "OneY.CopyCoordinates",
+        "path": "OneY/CopyCoordinates.lean",
+        "lines": 167,
+        "sha256": "cdb13dd7d461771283d3f9c3bf8ce31c4a4fd9e8af30b39f2ae9e3010acd03d0"
+      },
+      {
+        "module": "OneY.DecoratedBlocker",
+        "path": "OneY/DecoratedBlocker.lean",
+        "lines": 195,
+        "sha256": "b7b8f7238bd41ce7d517edd0a836f35ad59e89f263bef85751130134d33dd213"
+      },
+      {
+        "module": "OneY.DecoratedBlockerExpansion",
+        "path": "OneY/DecoratedBlockerExpansion.lean",
+        "lines": 139,
+        "sha256": "9ce5a77a581565ccf3cb1726a5f1fa567063268fbd01ccd6851cd08dd65ec965"
+      },
+      {
+        "module": "OneY.DecoratedColumn",
+        "path": "OneY/DecoratedColumn.lean",
+        "lines": 73,
+        "sha256": "eaf7118c24ef3fe3fa2621dd5c28a57d23f2c1dd661667570df209ed46675393"
+      },
+      {
+        "module": "OneY.DepthMatrix",
+        "path": "OneY/DepthMatrix.lean",
+        "lines": 141,
+        "sha256": "f6a62464ee7265ac2a00917a9dd011477e11e4a12da242d19e6bea719b2c818e"
+      },
+      {
+        "module": "OneY.Expansion",
+        "path": "OneY/Expansion.lean",
+        "lines": 81,
+        "sha256": "e6f55877dd525aa230779bf2d19f9514bd1425faa834c613397c0fa38813dc18"
+      },
+      {
+        "module": "OneY.ExpansionCanonical",
+        "path": "OneY/ExpansionCanonical.lean",
+        "lines": 135,
+        "sha256": "ea8addd9292c8bc8d55d90cc84fbcd9b4d15a138ac9c6ee9eaa563b9102445ce"
+      },
+      {
+        "module": "OneY.ExpansionProperties",
+        "path": "OneY/ExpansionProperties.lean",
+        "lines": 103,
+        "sha256": "687ef5a266a3a94eb7b825ce605729c924bc3f1f4d2ece12fd5409b43849c56b"
+      },
+      {
+        "module": "OneY.ExpansionRebuildPrefix",
+        "path": "OneY/ExpansionRebuildPrefix.lean",
+        "lines": 129,
+        "sha256": "c7f4972716a6590457d9df39370f984ff76fcd45b6d4afcb05e0e06f98fa6ad6"
+      },
+      {
+        "module": "OneY.Extraction",
+        "path": "OneY/Extraction.lean",
+        "lines": 118,
+        "sha256": "51c095c15005eaa6be330db8bb85a916c9d34a4a76c32defab75abc79ec42fc2"
+      },
+      {
+        "module": "OneY.ExtractionGeometry",
+        "path": "OneY/ExtractionGeometry.lean",
+        "lines": 82,
+        "sha256": "67bb64589fda27f08cf506e0bf75a376b8f4be8ea217f4f3828b9fef4783e1e6"
+      },
+      {
+        "module": "OneY.FirstMatch",
+        "path": "OneY/FirstMatch.lean",
+        "lines": 115,
+        "sha256": "97a213cba72a3e9b8bfeed5eab376a53cfcadfef3e11d9b4f8d1b783392a665d"
+      },
+      {
+        "module": "OneY.Forest",
+        "path": "OneY/Forest.lean",
+        "lines": 197,
+        "sha256": "7c382392e077d910cc62a14d90f6c511096a98c1345a390ceb0c042e83c54440"
+      },
+      {
+        "module": "OneY.ForestBridge",
+        "path": "OneY/ForestBridge.lean",
+        "lines": 49,
+        "sha256": "dbf108d34830f65e1b82bdd8a53c72c750e21732158e8d0cefe653d4e2a96438"
+      },
+      {
+        "module": "OneY.ForestFrame",
+        "path": "OneY/ForestFrame.lean",
+        "lines": 155,
+        "sha256": "b7033bb93345abb3b354493efe391377f9f72abd65e73fdb5b3eb97325b6af53"
+      },
+      {
+        "module": "OneY.ForestFrameMatrix",
+        "path": "OneY/ForestFrameMatrix.lean",
+        "lines": 131,
+        "sha256": "7a52b76794bd83411ac037ce3a7aab5d98bdfee8adeaf943b4311ae0e7d7fd6e"
+      },
+      {
+        "module": "OneY.FrameCopy",
+        "path": "OneY/FrameCopy.lean",
+        "lines": 139,
+        "sha256": "03ed1b508213701ef3f3b5e3c22aff0762e994bb282e92cdae32e1f1184994b6"
+      },
+      {
+        "module": "OneY.Geometry",
+        "path": "OneY/Geometry.lean",
+        "lines": 178,
+        "sha256": "026a82bc46f3332be44e7bda7786c65067aa8c7baf20743bf1a2756c46be8a16"
+      },
+      {
+        "module": "OneY.LowerCopy",
+        "path": "OneY/LowerCopy.lean",
+        "lines": 319,
+        "sha256": "cce6d636a0a3e23d8c7ef6e941c0a4e3d81e37fbb79f469248c74621dbd2d633"
+      },
+      {
+        "module": "OneY.LowerCopyBadBlocker",
+        "path": "OneY/LowerCopyBadBlocker.lean",
+        "lines": 300,
+        "sha256": "da16c9a0c5778671c73a3bb2a1b8941d9aa49cfa407dbada228644595cd0a9a6"
+      },
+      {
+        "module": "OneY.LowerCopyBlocker",
+        "path": "OneY/LowerCopyBlocker.lean",
+        "lines": 359,
+        "sha256": "734918d8516d93702737d8c0846bca7060f47b9e0a143108341cc62c5e8ab7d5"
+      },
+      {
+        "module": "OneY.LowerCopyBottom",
+        "path": "OneY/LowerCopyBottom.lean",
+        "lines": 102,
+        "sha256": "59f26e80df2e1ef9bdde802b7d775e4eeb15c4863139c6520014ca084e585214"
+      },
+      {
+        "module": "OneY.LowerCopyBottomRecovery",
+        "path": "OneY/LowerCopyBottomRecovery.lean",
+        "lines": 299,
+        "sha256": "9bb1bac0f738e612f48d69d90009a714d261320173b5d8e0e0a305184c72013d"
+      },
+      {
+        "module": "OneY.LowerCopyCanonical",
+        "path": "OneY/LowerCopyCanonical.lean",
+        "lines": 199,
+        "sha256": "53c3e6c1510f610ee30eead7d106407bb069d98b006ebc8babe68ab601529f60"
+      },
+      {
+        "module": "OneY.LowerCopyComparison",
+        "path": "OneY/LowerCopyComparison.lean",
+        "lines": 576,
+        "sha256": "e1ef0b5468255e856bb8b19523cb0cbadd5d4d2dde6088e09eed94d989b0262a"
+      },
+      {
+        "module": "OneY.LowerCopyDepths",
+        "path": "OneY/LowerCopyDepths.lean",
+        "lines": 291,
+        "sha256": "efc7f8ed413cc484963daf194423d6e435c397ee676ae713789c6801a85e23ec"
+      },
+      {
+        "module": "OneY.LowerCopyDominance",
+        "path": "OneY/LowerCopyDominance.lean",
+        "lines": 463,
+        "sha256": "668b3d7d86e5537eaa0acdcc9ac608afbb476842318f14fa33bfcb187c442e5f"
+      },
+      {
+        "module": "OneY.LowerCopyLayerTopBound",
+        "path": "OneY/LowerCopyLayerTopBound.lean",
+        "lines": 79,
+        "sha256": "6fa3a0d8a11e74916bc0008ca62ce79b48b4e348dd9d105f335165b8d17f1e3a"
+      },
+      {
+        "module": "OneY.LowerCopyLayerTransport",
+        "path": "OneY/LowerCopyLayerTransport.lean",
+        "lines": 37,
+        "sha256": "12ff65e3a5f0061c6ff30683c3f68cbe7303278cde6a7ec9c55d0faf5c2c0f55"
+      },
+      {
+        "module": "OneY.LowerCopyNesting",
+        "path": "OneY/LowerCopyNesting.lean",
+        "lines": 309,
+        "sha256": "5e972648dbe70bae072779f080af8abd9dfb12811ee5c3ffe7b172d892abf8e7"
+      },
+      {
+        "module": "OneY.LowerCopyPseudo",
+        "path": "OneY/LowerCopyPseudo.lean",
+        "lines": 137,
+        "sha256": "35d294470f6f3dc9cfcf39546daabb44b621436958a6cb0a27e375b60fc212eb"
+      },
+      {
+        "module": "OneY.LowerCopyPseudoHigh",
+        "path": "OneY/LowerCopyPseudoHigh.lean",
+        "lines": 112,
+        "sha256": "cdeffcf66f89cc7d89ef3020d9583319a827ed0c0b5bb576c88c20bb048ff16c"
+      },
+      {
+        "module": "OneY.LowerCopyPseudoLow",
+        "path": "OneY/LowerCopyPseudoLow.lean",
+        "lines": 166,
+        "sha256": "21668281cc7ec016de01f701821d720e0b3ddfc4b82e8c3ff9b603fbd8b445d6"
+      },
+      {
+        "module": "OneY.LowerCopyPseudoOutside",
+        "path": "OneY/LowerCopyPseudoOutside.lean",
+        "lines": 110,
+        "sha256": "c8afb004f0b6b786cfad8be10a315f8f5e6e915085cfb2455a96873792175792"
+      },
+      {
+        "module": "OneY.LowerCopyPseudoSeam",
+        "path": "OneY/LowerCopyPseudoSeam.lean",
+        "lines": 75,
+        "sha256": "f76bf1bc18efe54ff0cfa858a7db29f18db7c116aa70753664bacca0016157ce"
+      },
+      {
+        "module": "OneY.LowerCopyRebuild",
+        "path": "OneY/LowerCopyRebuild.lean",
+        "lines": 117,
+        "sha256": "619f1d215ffc1ddab4d6b86f8a1192ff9d53012aa23a9dda5b54521982632aa5"
+      },
+      {
+        "module": "OneY.LowerCopyRoots",
+        "path": "OneY/LowerCopyRoots.lean",
+        "lines": 246,
+        "sha256": "97597efd4659fd1f44d437e33380e72de8279e2823b974d61e019b714c65541a"
+      },
+      {
+        "module": "OneY.LowerCopyTopBound",
+        "path": "OneY/LowerCopyTopBound.lean",
+        "lines": 92,
+        "sha256": "9e1f4e450c311fc556c1b461a60805840d252a01fdbfc9a02dfc0f7e415c8d88"
+      },
+      {
+        "module": "OneY.LowerCopyTopForest",
+        "path": "OneY/LowerCopyTopForest.lean",
+        "lines": 61,
+        "sha256": "d937e282f23c7445b62fb750cf57b05697e176b25670201369d1acca5be53e3f"
+      },
+      {
+        "module": "OneY.LowerCopyTransport",
+        "path": "OneY/LowerCopyTransport.lean",
+        "lines": 136,
+        "sha256": "dd2c5b48a854547cee83164310f453abb87f1ea30a48c74d29ec8340048daf54"
+      },
+      {
+        "module": "OneY.LowerTowerInputs",
+        "path": "OneY/LowerTowerInputs.lean",
+        "lines": 141,
+        "sha256": "8563c256d25a3319ddd48de95f4198906cbd9dc022e8532e15ea9463622a4b58"
+      },
+      {
+        "module": "OneY.LowerTowerRebuild",
+        "path": "OneY/LowerTowerRebuild.lean",
+        "lines": 180,
+        "sha256": "a9c4f305a5fccb1405fff135beec792ff7608eb27679f3b594b449d76bf1015b"
+      },
+      {
+        "module": "OneY.Numeric",
+        "path": "OneY/Numeric.lean",
+        "lines": 237,
+        "sha256": "932d4fc392667e84b2346ebd0a6c8b20ea27806c65de0ab2d97ea0c3a00a31fd"
+      },
+      {
+        "module": "OneY.NumericDecoratedFrame",
+        "path": "OneY/NumericDecoratedFrame.lean",
+        "lines": 89,
+        "sha256": "7c8781989cafd86998b1ac43854bf6ab54c03ec31ddb0886cc63f3e4bccf9bc1"
+      },
+      {
+        "module": "OneY.NumericFrame",
+        "path": "OneY/NumericFrame.lean",
+        "lines": 119,
+        "sha256": "71c6150511688282522e650019c953278216d8a0ddb2486c534ad1154e89fb73"
+      },
+      {
+        "module": "OneY.NumericFrameBlocker",
+        "path": "OneY/NumericFrameBlocker.lean",
+        "lines": 142,
+        "sha256": "5b9c34cb73332da424044f34d3cf6c832325e2e2da38cb617ddc3e90ba3424eb"
+      },
+      {
+        "module": "OneY.NumericGeometry",
+        "path": "OneY/NumericGeometry.lean",
+        "lines": 104,
+        "sha256": "450d6ed7444deb3acc51aa5a3d8dd37097c6897868f5dcaac8da2ffac16592f5"
+      },
+      {
+        "module": "OneY.NumericRoots",
+        "path": "OneY/NumericRoots.lean",
+        "lines": 105,
+        "sha256": "6538216629597ce96de195fcb307edd61ce0c432f99ca7572bcfd5db8cf0eef6"
+      },
+      {
+        "module": "OneY.OrdinaryCopy",
+        "path": "OneY/OrdinaryCopy.lean",
+        "lines": 246,
+        "sha256": "95c86b49bb2fa7135f73f9aef8c15977581cb67d30230d204564d0a4187e15b3"
+      },
+      {
+        "module": "OneY.OrdinaryCopyExtraction",
+        "path": "OneY/OrdinaryCopyExtraction.lean",
+        "lines": 99,
+        "sha256": "35a6b446610747b3c1af6c43cf647b6ebf6794724cc6ed2540ecd0ff2deb599e"
+      },
+      {
+        "module": "OneY.OrdinaryCopyForest",
+        "path": "OneY/OrdinaryCopyForest.lean",
+        "lines": 122,
+        "sha256": "7eec97048b561f751510fe7a381a6698088a7b41d8e33b3da32f5376619342c7"
+      },
+      {
+        "module": "OneY.OrdinaryCopyNumeric",
+        "path": "OneY/OrdinaryCopyNumeric.lean",
+        "lines": 142,
+        "sha256": "0973fc3ba4e8a84055477946d5b8bd4830302f91475a9380ab5901d11e1b6064"
+      },
+      {
+        "module": "OneY.OrdinaryCopyPseudo",
+        "path": "OneY/OrdinaryCopyPseudo.lean",
+        "lines": 73,
+        "sha256": "81cc25b3239ed029b7e2527b095e8f56fbaf2eb5a968b26b76c9a488d8b192e3"
+      },
+      {
+        "module": "OneY.OrdinaryCopyReconstruction",
+        "path": "OneY/OrdinaryCopyReconstruction.lean",
+        "lines": 70,
+        "sha256": "2f7168a915ca50c64076a27cb1155c0c181e5c5e664fd96cbbb6780112602a6b"
+      },
+      {
+        "module": "OneY.OrdinaryCopyRoots",
+        "path": "OneY/OrdinaryCopyRoots.lean",
+        "lines": 66,
+        "sha256": "8ee1216e1d43080b76646fc175116fa220123072e8c3a243f3f2a5595d411f4c"
+      },
+      {
+        "module": "OneY.OrdinaryCopySelection",
+        "path": "OneY/OrdinaryCopySelection.lean",
+        "lines": 114,
+        "sha256": "4ce7bca2aab61c2755837f4419181463db3c793d93ae4052b1d6315d39c083ae"
+      },
+      {
+        "module": "OneY.Prefix",
+        "path": "OneY/Prefix.lean",
+        "lines": 162,
+        "sha256": "7e50b2828ef5da8b765172aae92b5961244aaa971e3b730d8624fc7351724f5e"
+      },
+      {
+        "module": "OneY.Pseudo",
+        "path": "OneY/Pseudo.lean",
+        "lines": 128,
+        "sha256": "5efc7251c0873671e962cbbaa54e95d309050855cdaf7c56ecb20e3d2cc493dc"
+      },
+      {
+        "module": "OneY.PseudoCollapse",
+        "path": "OneY/PseudoCollapse.lean",
+        "lines": 89,
+        "sha256": "5d49e706b4611cf3306edfa23fc9fc086b00da9b942db41a67653d1e01630afe"
+      },
+      {
+        "module": "OneY.PseudoSelection",
+        "path": "OneY/PseudoSelection.lean",
+        "lines": 178,
+        "sha256": "c3d7739c0c458e3df268653aa7ede65c5500c8ddb05b68fded6db3fac2453974"
+      },
+      {
+        "module": "OneY.Reconstruction",
+        "path": "OneY/Reconstruction.lean",
+        "lines": 204,
+        "sha256": "f1cac3ea2a69b191549e98a0c684c4f2888e8a29eae5e54f1d22309658da0b62"
+      },
+      {
+        "module": "OneY.ReconstructionComparison",
+        "path": "OneY/ReconstructionComparison.lean",
+        "lines": 165,
+        "sha256": "a648fafc2e117644daeafd849d63b81116f6fd5f882b821ab78368dee46620c2"
+      },
+      {
+        "module": "OneY.ReconstructionComparisonPrefix",
+        "path": "OneY/ReconstructionComparisonPrefix.lean",
+        "lines": 155,
+        "sha256": "1d2a9c217f5237caa47369af853659367bea566c13a1fbfa989f230f789ec61e"
+      },
+      {
+        "module": "OneY.ReconstructionNumeric",
+        "path": "OneY/ReconstructionNumeric.lean",
+        "lines": 74,
+        "sha256": "2bf8011f12525d744338f267fc213e32171903ab1b4295a8d36fefd89f6e1840"
+      },
+      {
+        "module": "OneY.ReconstructionTop",
+        "path": "OneY/ReconstructionTop.lean",
+        "lines": 121,
+        "sha256": "e5e22afb31680cbd6788a60303c11653718cb9ceac97dea45ddb0633464e7fa7"
+      },
+      {
+        "module": "OneY.RelativeBlocker",
+        "path": "OneY/RelativeBlocker.lean",
+        "lines": 590,
+        "sha256": "80cb269fac67d94d36982bb5cecbd26caa3c44b81a19291ebcfd931ec5e1eb8f"
+      },
+      {
+        "module": "OneY.RootGeometry",
+        "path": "OneY/RootGeometry.lean",
+        "lines": 204,
+        "sha256": "5ec1a7f7a88d057cf34f58f179f4afb269dcd57fa71a7018a13b1788f5f3c8a8"
+      },
+      {
+        "module": "OneY.RootIndexed.ActualScheme",
+        "path": "OneY/RootIndexed/ActualScheme.lean",
+        "lines": 110,
+        "sha256": "98650ec5e503c952393d74c0bffad3439c6c6810178261d945b283812d1fa937"
+      },
+      {
+        "module": "OneY.RootIndexed.CopyCoordinates",
+        "path": "OneY/RootIndexed/CopyCoordinates.lean",
+        "lines": 99,
+        "sha256": "c8114dbbb946b4ae7557a2c32a2cde1dba6a055644ea280a4959f1282777ad60"
+      },
+      {
+        "module": "OneY.RootIndexed.CopyDiagram",
+        "path": "OneY/RootIndexed/CopyDiagram.lean",
+        "lines": 195,
+        "sha256": "ec217589d245147922054835fd519071bfd77ad2d9aeca5bee4f090f490076a8"
+      },
+      {
+        "module": "OneY.RootIndexed.Diagram",
+        "path": "OneY/RootIndexed/Diagram.lean",
+        "lines": 94,
+        "sha256": "55a7ce732c70341206223089f57bb78a072e2aa88d3eed0dd0b3cf0e4b02b5ec"
+      },
+      {
+        "module": "OneY.RootIndexed.ExpansionWellFounded",
+        "path": "OneY/RootIndexed/ExpansionWellFounded.lean",
+        "lines": 156,
+        "sha256": "7e8c4d6850b621a24aa0a35e38d1a4f6dac89b8f3420333d0f764a9aed1b3b09"
+      },
+      {
+        "module": "OneY.RootIndexed.LowerAtoms",
+        "path": "OneY/RootIndexed/LowerAtoms.lean",
+        "lines": 100,
+        "sha256": "776c3efc63a9ea0b900b189e6d451ba4fbfdeb7ee8e3ff3a8b86f7b278f45b18"
+      },
+      {
+        "module": "OneY.RootIndexed.OrdinaryAtoms",
+        "path": "OneY/RootIndexed/OrdinaryAtoms.lean",
+        "lines": 60,
+        "sha256": "b6c4ba17aa25723f32701961f43e44af7b1f115d9e9913384742e5233ac0222d"
+      },
+      {
+        "module": "OneY.RootIndexed.Prefix",
+        "path": "OneY/RootIndexed/Prefix.lean",
+        "lines": 60,
+        "sha256": "ba2b975b7f22cabd15a347f99064f13c17d3a7f89bcef847d06fc0ccecb44e8b"
+      },
+      {
+        "module": "OneY.RootIndexed.Representation",
+        "path": "OneY/RootIndexed/Representation.lean",
+        "lines": 533,
+        "sha256": "7de83df2493421ea274825de6d8706aa7b65cd94347c00d67142edb5109f72ae"
+      },
+      {
+        "module": "OneY.RootIndexed.SpliceGeometry",
+        "path": "OneY/RootIndexed/SpliceGeometry.lean",
+        "lines": 127,
+        "sha256": "3bd963a91ee85aa62ffe584758e32de06d6dc15aab34c0b47fb464fa1251c3f8"
+      },
+      {
+        "module": "OneY.RootIndexed.TerminalRoots",
+        "path": "OneY/RootIndexed/TerminalRoots.lean",
+        "lines": 59,
+        "sha256": "4de24ca40ba7422b8c30ee0a89ae453b5acaa59f68902b38526845e3ff3b0764"
+      },
+      {
+        "module": "OneY.RootIndexed.VirtualNeeds",
+        "path": "OneY/RootIndexed/VirtualNeeds.lean",
+        "lines": 83,
+        "sha256": "e85b3198ec2a3ac6ee7f27193c9571bd8e4b71239cb528b4af90591280ffc9f5"
+      },
+      {
+        "module": "OneY.RootSearch",
+        "path": "OneY/RootSearch.lean",
+        "lines": 101,
+        "sha256": "be1fc38af48c554edde6d67f2d286a25a5d2e403c6678959546d2b7ab81e3c81"
+      },
+      {
+        "module": "OneY.SingleContraction",
+        "path": "OneY/SingleContraction.lean",
+        "lines": 75,
+        "sha256": "19965fd57dc8bac1ca5b67b05acabe1a0ddac18673a65399b687259a5657e6f7"
+      },
+      {
+        "module": "OneY.SparseBlocker",
+        "path": "OneY/SparseBlocker.lean",
+        "lines": 182,
+        "sha256": "946f86e152d9a1fb500f301462c00e757bfa282e76ad992591973e93c02b5909"
+      },
+      {
+        "module": "OneY.SparseComparison",
+        "path": "OneY/SparseComparison.lean",
+        "lines": 119,
+        "sha256": "dadf1f5e33b915c79084a84e140da143ffa7d5a475f88841bd143ab6d9f1b794"
+      },
+      {
+        "module": "OneY.SparseDepth",
+        "path": "OneY/SparseDepth.lean",
+        "lines": 77,
+        "sha256": "09d34005b679704d61259a7d16957b0ccab1cc0bafab7617332b591fcbdec766"
+      },
+      {
+        "module": "OneY.TerminalCopy",
+        "path": "OneY/TerminalCopy.lean",
+        "lines": 231,
+        "sha256": "b40088136c376f560e3241aa6627a46192bee49e8705b59b6a39eb1d3b76ce73"
+      },
+      {
+        "module": "OneY.TerminalCopyBottom",
+        "path": "OneY/TerminalCopyBottom.lean",
+        "lines": 98,
+        "sha256": "707dd81a251e2ebae1cd9372c999f4dc5721df561af798c68564452228346eee"
+      },
+      {
+        "module": "OneY.TerminalCopyBottomRecovery",
+        "path": "OneY/TerminalCopyBottomRecovery.lean",
+        "lines": 290,
+        "sha256": "288fa964d9309c55e2bb11ae262f91f475d33f9e109e7bb1ec5fc9526394854f"
+      },
+      {
+        "module": "OneY.TerminalCopyCanonical",
+        "path": "OneY/TerminalCopyCanonical.lean",
+        "lines": 102,
+        "sha256": "68011cf351bbc54456ee91d88a127a344dc5e7a5dc79ef021706ca03725f681d"
+      },
+      {
+        "module": "OneY.TerminalCopyComparison",
+        "path": "OneY/TerminalCopyComparison.lean",
+        "lines": 113,
+        "sha256": "fbcb03e2245626c66ce64a2ca67a051597958579066859315223232e2af6c569"
+      },
+      {
+        "module": "OneY.TerminalCopyComplete",
+        "path": "OneY/TerminalCopyComplete.lean",
+        "lines": 60,
+        "sha256": "2fa4b8a9746a6720ef0e4c8fda680e4fa942d6833e36f1470f86aecb21419d32"
+      },
+      {
+        "module": "OneY.TerminalCopyDepths",
+        "path": "OneY/TerminalCopyDepths.lean",
+        "lines": 127,
+        "sha256": "d3505d52e8f1bc81b055844f76745fc5fc98014749b1118ac4c9a4309a8c5cb2"
+      },
+      {
+        "module": "OneY.TerminalCopyExternal",
+        "path": "OneY/TerminalCopyExternal.lean",
+        "lines": 63,
+        "sha256": "286c2c65ad3b5a4736e7e3ced758a0e3515a285ca4f169b936c1c3c01ec8fb7e"
+      },
+      {
+        "module": "OneY.TerminalCopyExternalSeam",
+        "path": "OneY/TerminalCopyExternalSeam.lean",
+        "lines": 161,
+        "sha256": "548c56403bb62db848e78f05b50c70460a0cd48aa146b037ee1524545f6cae2a"
+      },
+      {
+        "module": "OneY.TerminalCopyExtraction",
+        "path": "OneY/TerminalCopyExtraction.lean",
+        "lines": 56,
+        "sha256": "2fdf8b345fed99bc0433bba44c6b67a2fa70b18c331b7e4df964e372c4d0d69f"
+      },
+      {
+        "module": "OneY.TerminalCopyLinear",
+        "path": "OneY/TerminalCopyLinear.lean",
+        "lines": 41,
+        "sha256": "51edf5e3ae46eb64da65de57be528d1021b2e71cbc0249c65c4ecb625b24aae7"
+      },
+      {
+        "module": "OneY.TerminalCopyNesting",
+        "path": "OneY/TerminalCopyNesting.lean",
+        "lines": 206,
+        "sha256": "e993de071dc9709b9f91c9383969a50c3dca13e202801514f7f88b2b3f2314b1"
+      },
+      {
+        "module": "OneY.TerminalCopyNumeric",
+        "path": "OneY/TerminalCopyNumeric.lean",
+        "lines": 49,
+        "sha256": "aefe8840496df0b2409e7250aae3d1ddb1fc794635c57e75ab8441db4bb75725"
+      },
+      {
+        "module": "OneY.TerminalCopyRebuild",
+        "path": "OneY/TerminalCopyRebuild.lean",
+        "lines": 90,
+        "sha256": "42fdc4e7335a442ce288a7c797e1a01aa269414c78a3fe1645790728ff4b7242"
+      },
+      {
+        "module": "OneY.TerminalCopyReconstruction",
+        "path": "OneY/TerminalCopyReconstruction.lean",
+        "lines": 222,
+        "sha256": "b7b54cad6ba4e2f15c0bf03bc2f2042fc53f5b4c3fff34b37b78fcf23cde498a"
+      },
+      {
+        "module": "OneY.TerminalCopyRoots",
+        "path": "OneY/TerminalCopyRoots.lean",
+        "lines": 85,
+        "sha256": "403073f68283ae19cfb4637a96d2782030383944bfbe02bd381eb8c6cfb5500a"
+      },
+      {
+        "module": "OneY.TerminalCopySeamComparison",
+        "path": "OneY/TerminalCopySeamComparison.lean",
+        "lines": 110,
+        "sha256": "4dae272a20882aea889fa101107f1f040213fe1c49bcb6a5f8ddc554747ec8ce"
+      },
+      {
+        "module": "OneY.TerminalCopyTopBound",
+        "path": "OneY/TerminalCopyTopBound.lean",
+        "lines": 234,
+        "sha256": "148bef5c8e683b2c69d67b7cb99dfeabd5e194f73b78f9ce11c01b766d02201a"
+      },
+      {
+        "module": "OneY.TerminalCopyTransport",
+        "path": "OneY/TerminalCopyTransport.lean",
+        "lines": 80,
+        "sha256": "a7ea601f65125f14152fc653358804748ce7241ba34a819622e744b3fda921e7"
+      },
+      {
+        "module": "OneY.TerminalCopyUpperOrder",
+        "path": "OneY/TerminalCopyUpperOrder.lean",
+        "lines": 132,
+        "sha256": "4900a9dff46f67c6cd68487a92d2e5bc79c057ce8840759a70e286359f241ee7"
+      },
+      {
+        "module": "OneY.TerminalDecoratedRecovery",
+        "path": "OneY/TerminalDecoratedRecovery.lean",
+        "lines": 129,
+        "sha256": "7bdc5cb8f99196e3b98de0b7a25aec4169b9a141d0fe589d0c83307b3cdd26e5"
+      },
+      {
+        "module": "OneY.TerminalFrame",
+        "path": "OneY/TerminalFrame.lean",
+        "lines": 76,
+        "sha256": "3eea61582b704792b0add1ea91156ffa4b8b2ee0c5c0153643726ce2426fa129"
+      },
+      {
+        "module": "OneY.TerminalFrameDepths",
+        "path": "OneY/TerminalFrameDepths.lean",
+        "lines": 47,
+        "sha256": "fd4bc50ad185bb5283d69ddb57738693b97c8fe84cb32ce5f82f31bc87a9c7c8"
+      },
+      {
+        "module": "OneY.TerminalFrameParents",
+        "path": "OneY/TerminalFrameParents.lean",
+        "lines": 126,
+        "sha256": "9b10c7a7b33d8b83c29ad5a0198518a0bce82ba2be8784cf2e49652892eed150"
+      },
+      {
+        "module": "OneY.TerminalTowerRebuild",
+        "path": "OneY/TerminalTowerRebuild.lean",
+        "lines": 111,
+        "sha256": "91cb439cc4db9528b128fc743e5f5f33cf0fe7ae4fa92afc881313d936a5afcd"
+      },
+      {
+        "module": "OneY.TopComparison",
+        "path": "OneY/TopComparison.lean",
+        "lines": 307,
+        "sha256": "f0eb7d14a9459aca47997fc8ffe0bcca7c8c1d0fc4bd249148f8c8287815b654"
+      },
+      {
+        "module": "OneY.TopForestGeometry",
+        "path": "OneY/TopForestGeometry.lean",
+        "lines": 104,
+        "sha256": "81768ae4f7adb96b7c7cc108acd79b22770e4368500e3fe2ca65d8e7a07ed9dd"
+      },
+      {
+        "module": "OneY.TowerCopyAssembly",
+        "path": "OneY/TowerCopyAssembly.lean",
+        "lines": 75,
+        "sha256": "ed437e97257c33540ef33317c39ef67cd4d699f778a976b8b3f5d9945022b88a"
+      },
+      {
+        "module": "OneY.TowerReconstruction",
+        "path": "OneY/TowerReconstruction.lean",
+        "lines": 95,
+        "sha256": "9ecd2d86e4b75f97d4fafa7a5f64d119bab248fa7f9eab0640783c4aaf692902"
+      },
+      {
+        "module": "ZeroY.BMS.AnyArray",
+        "path": "ZeroY/BMS/AnyArray.lean",
+        "lines": 125,
+        "sha256": "331c0db08f9bc14a36c1c99f2d2cf8f23c0b247bf044e912ed9f3fc555f0e4e1"
+      },
+      {
+        "module": "ZeroY.BMS.PaddedDescent",
+        "path": "ZeroY/BMS/PaddedDescent.lean",
+        "lines": 315,
+        "sha256": "718680bae808b68aa9434f10cb2b55942a90445ec6879c09c7dfa58f0f9d7d27"
+      },
+      {
+        "module": "ZeroY.Decode",
+        "path": "ZeroY/Decode.lean",
+        "lines": 168,
+        "sha256": "97297aca0e787a55af9702970afb6ac54f96dfb46f04e41feb832fc49b968e50"
+      },
+      {
+        "module": "ZeroY.Encode",
+        "path": "ZeroY/Encode.lean",
+        "lines": 46,
+        "sha256": "b5bc022d94d9f188d77cc8b87b797f77bd9c5635a2d10914bc54d9a021f31efe"
+      },
+      {
+        "module": "ZeroY.Expansion",
+        "path": "ZeroY/Expansion.lean",
+        "lines": 167,
+        "sha256": "45cc6e7a600a6144bf41985a69c2e7ed69955d83e53a310ec3f6fff72511c20a"
+      },
+      {
+        "module": "ZeroY.Expansion.Context",
+        "path": "ZeroY/Expansion/Context.lean",
+        "lines": 116,
+        "sha256": "27e68f3bee476089fe6860501523b1ce6e0a01966345af4e8e71593f4df18a17"
+      },
+      {
+        "module": "ZeroY.Forest.AncestorMonotone",
+        "path": "ZeroY/Forest/AncestorMonotone.lean",
+        "lines": 71,
+        "sha256": "6741786b54af968be053c7301c739a9de12e8ba612d56236d59678755d5e3351"
+      },
+      {
+        "module": "ZeroY.Forest.Blocker",
+        "path": "ZeroY/Forest/Blocker.lean",
+        "lines": 194,
+        "sha256": "2fc316a118b79a5f659920b64459d8393ac4c9e7056e0bec86cd01b2e58affe7"
+      },
+      {
+        "module": "ZeroY.Forest.Comparison",
+        "path": "ZeroY/Forest/Comparison.lean",
+        "lines": 208,
+        "sha256": "6d383db4a1a349eda69ff1700a62ecc19041927b28c08eb4abfc88f0e1f17e76"
+      },
+      {
+        "module": "ZeroY.Forest.MatrixParents",
+        "path": "ZeroY/Forest/MatrixParents.lean",
+        "lines": 103,
+        "sha256": "02a5ab7de33967e83a70dd03da1e249ea6ca999efc09861c3b0b686c39ff4485"
+      },
+      {
+        "module": "ZeroY.Forest.Stack",
+        "path": "ZeroY/Forest/Stack.lean",
+        "lines": 253,
+        "sha256": "3b1b3284032d60cb899a9aaae83cc7344ff87487c7274247d4368fe9470d63de"
+      },
+      {
+        "module": "ZeroY.Image",
+        "path": "ZeroY/Image.lean",
+        "lines": 92,
+        "sha256": "b4d9a55f59c302c82d97df4d0b725f12f49a94c6dc8dbda4d5391e01667c9d9a"
+      },
+      {
+        "module": "ZeroY.MatrixOrder",
+        "path": "ZeroY/MatrixOrder.lean",
+        "lines": 70,
+        "sha256": "f466563b6031063a5350b9d2b3c64971e38ed0aab1e7b738c7a09313e9201ced"
+      },
+      {
+        "module": "ZeroY.Mountain",
+        "path": "ZeroY/Mountain.lean",
+        "lines": 104,
+        "sha256": "8e9e856d0d8413b9037db13f37827e8e477c7317acbdd2b24222e9b52931c8e2"
+      },
+      {
+        "module": "ZeroY.Mountain.CommonChain",
+        "path": "ZeroY/Mountain/CommonChain.lean",
+        "lines": 270,
+        "sha256": "cb37492eeeac14f0722342599922bb65601c049067cfaf8add586f6c89ec5dfe"
+      },
+      {
+        "module": "ZeroY.Mountain.Encoding",
+        "path": "ZeroY/Mountain/Encoding.lean",
+        "lines": 105,
+        "sha256": "48b4d574ddd8ca7114b9ed381f2e0cb2a75c1c83f1a945effc9658770b4002c6"
+      },
+      {
+        "module": "ZeroY.Mountain.Roots",
+        "path": "ZeroY/Mountain/Roots.lean",
+        "lines": 167,
+        "sha256": "e7a2a688ab637fae6c189021321c0e930415015597be8cd45788b200231deb59"
+      },
+      {
+        "module": "ZeroY.Mountain.SumInverse",
+        "path": "ZeroY/Mountain/SumInverse.lean",
+        "lines": 91,
+        "sha256": "143777a74b52d3ba6aaeee6a2df45fa98ab4fc0241829ef72d2b45f8ffef3a9b"
+      },
+      {
+        "module": "ZeroY.Mountain.Termination",
+        "path": "ZeroY/Mountain/Termination.lean",
+        "lines": 214,
+        "sha256": "9526db6a5b0828c703d10174eba98b0088f8f890ff9058715e15c9771f6a328f"
+      },
+      {
+        "module": "ZeroY.OrderEmbedding",
+        "path": "ZeroY/OrderEmbedding.lean",
+        "lines": 235,
+        "sha256": "821e752eecf956d6be04d60a02ecf7da11c69231987aab7e154a0a693d261561"
+      },
+      {
+        "module": "ZeroY.PaddedExt",
+        "path": "ZeroY/PaddedExt.lean",
+        "lines": 105,
+        "sha256": "7308a4895baad19479b9b0fa2473711fc73f2cc5fba3e70bbc422df04ffce800"
+      },
+      {
+        "module": "ZeroY.PaddedOrder",
+        "path": "ZeroY/PaddedOrder.lean",
+        "lines": 103,
+        "sha256": "e5223e4786daa455ed130571d5538502dd71b6762d76b20315e98d08f68d3a58"
+      },
+      {
+        "module": "ZeroY.Reversible",
+        "path": "ZeroY/Reversible.lean",
+        "lines": 116,
+        "sha256": "187e3d74ff94488492c2ddc38a1340ff0e8513c71c052bfac70bdc2a7b68bc7a"
+      },
+      {
+        "module": "ZeroY.RoundTrip",
+        "path": "ZeroY/RoundTrip.lean",
+        "lines": 232,
+        "sha256": "dfce8a1d169f8018e5ec71e0b30bed4d5e206947afb4ba14d37bc742b6ab1412"
+      },
+      {
+        "module": "ZeroY.SequenceOrder",
+        "path": "ZeroY/SequenceOrder.lean",
+        "lines": 90,
+        "sha256": "d3572a9f7d7a88f543beab152f294234f0df1b1dde26f101a6e2364cdc768fd8"
+      },
+      {
+        "module": "ZeroY.Structural.BlockerExpansion",
+        "path": "ZeroY/Structural/BlockerExpansion.lean",
+        "lines": 267,
+        "sha256": "0370d5cab8539609d1d9230e602035e3d1e319b1225e2b895d1c0110595ff870"
+      },
+      {
+        "module": "ZeroY.Structural.CopyOrder",
+        "path": "ZeroY/Structural/CopyOrder.lean",
+        "lines": 216,
+        "sha256": "dac0abac5e4d1577a81604217fffecd8ae0602ec8dad238d6016bfcd1cb1ed76"
+      },
+      {
+        "module": "ZeroY.Structural.DecodeTower",
+        "path": "ZeroY/Structural/DecodeTower.lean",
+        "lines": 180,
+        "sha256": "1510f4d4862bddad28525420892b52e6a2613534e0ba2540c485db6d37f76807"
+      },
+      {
+        "module": "ZeroY.Structural.DepthExpansion",
+        "path": "ZeroY/Structural/DepthExpansion.lean",
+        "lines": 188,
+        "sha256": "6d50dc2262431a45a960176a7025bfd9700275c978f90499a1ceb46f5b51719d"
+      },
+      {
+        "module": "ZeroY.Structural.Expansion",
+        "path": "ZeroY/Structural/Expansion.lean",
+        "lines": 204,
+        "sha256": "de7748d16f23baa2233fa153ecb9a5bc4a7c90b16babb2f75d44aa90a4797ac0"
+      },
+      {
+        "module": "ZeroY.Structural.ExpansionCoordinates",
+        "path": "ZeroY/Structural/ExpansionCoordinates.lean",
+        "lines": 177,
+        "sha256": "b6390e7ec58592a209276c8675fcdad564b4eceddd08455cae383e79b0991688"
+      },
+      {
+        "module": "ZeroY.Structural.ExpansionParentAlignment",
+        "path": "ZeroY/Structural/ExpansionParentAlignment.lean",
+        "lines": 75,
+        "sha256": "0a3283aec654b9a3d83a4293d25432a4e515f1ed52d1cbbff9a597b7ca155ac4"
+      },
+      {
+        "module": "ZeroY.Structural.ExpansionParents",
+        "path": "ZeroY/Structural/ExpansionParents.lean",
+        "lines": 363,
+        "sha256": "2ab4c61f527de313573f72a37ba80ef1da7e92a48737eac17e2dcb7a6cfb0bd7"
+      },
+      {
+        "module": "ZeroY.Structural.Prefix",
+        "path": "ZeroY/Structural/Prefix.lean",
+        "lines": 195,
+        "sha256": "9dbfb8a984d5afb9b2147eebaa60226a13b58d8cea8dbbb490695ffea6875fa8"
+      },
+      {
+        "module": "ZeroY.Structural.RawRecognition",
+        "path": "ZeroY/Structural/RawRecognition.lean",
+        "lines": 63,
+        "sha256": "b20c519649a73971beb2de486b1c3a1e3dd4671b4f082d2de4e1eeb2d49be4bd"
+      },
+      {
+        "module": "ZeroY.Structural.Recognition",
+        "path": "ZeroY/Structural/Recognition.lean",
+        "lines": 269,
+        "sha256": "f6833f95da3c44e696dbcf7157ee0eaa576420fc3c992a87d44cc154cec91fa6"
+      },
+      {
+        "module": "ZeroY.Syntax",
+        "path": "ZeroY/Syntax.lean",
+        "lines": 94,
+        "sha256": "4d57490168005abc0b7585aca6b727369e12d4d7b21cfe10b4036423391ca326"
+      },
+      {
+        "module": "ZeroY.Transport",
+        "path": "ZeroY/Transport.lean",
+        "lines": 147,
+        "sha256": "94cc5ebb5c7206cc5dbc594599ddea5cd15b3cfebadff6887c9e4173dd9f66b3"
+      }
+    ],
+    "edges": [
+      {
+        "from": "OneY.RootIndexed.ExpansionWellFounded",
+        "to": "OneY.ExpansionCanonical"
+      },
+      {
+        "from": "OneY.ExpansionCanonical",
+        "to": "OneY.ExpansionRebuildPrefix"
+      },
+      {
+        "from": "OneY.ExpansionRebuildPrefix",
+        "to": "OneY.TerminalTowerRebuild"
+      },
+      {
+        "from": "OneY.TerminalTowerRebuild",
+        "to": "OneY.TowerCopyAssembly"
+      },
+      {
+        "from": "OneY.TowerCopyAssembly",
+        "to": "OneY.TerminalCopyLinear"
+      },
+      {
+        "from": "OneY.TerminalCopyLinear",
+        "to": "OneY.TerminalCopyUpperOrder"
+      },
+      {
+        "from": "OneY.TerminalCopyUpperOrder",
+        "to": "OneY.TerminalCopyDepths"
+      },
+      {
+        "from": "OneY.TerminalCopyDepths",
+        "to": "OneY.TerminalCopyExternal"
+      },
+      {
+        "from": "OneY.TerminalCopyExternal",
+        "to": "OneY.TerminalCopyExternalSeam"
+      },
+      {
+        "from": "OneY.TerminalCopyExternalSeam",
+        "to": "OneY.TerminalCopySeamComparison"
+      },
+      {
+        "from": "OneY.TerminalCopySeamComparison",
+        "to": "OneY.TerminalCopyBottomRecovery"
+      },
+      {
+        "from": "OneY.TerminalCopyBottomRecovery",
+        "to": "OneY.TerminalCopyBottom"
+      },
+      {
+        "from": "OneY.TerminalCopyBottom",
+        "to": "OneY.TerminalCopyTransport"
+      },
+      {
+        "from": "OneY.TerminalCopyTransport",
+        "to": "OneY.TerminalCopyRebuild"
+      },
+      {
+        "from": "OneY.TerminalCopyRebuild",
+        "to": "OneY.TerminalCopyComplete"
+      },
+      {
+        "from": "OneY.TerminalCopyComplete",
+        "to": "OneY.TerminalDecoratedRecovery"
+      },
+      {
+        "from": "OneY.TerminalDecoratedRecovery",
+        "to": "OneY.NumericDecoratedFrame"
+      },
+      {
+        "from": "OneY.NumericDecoratedFrame",
+        "to": "OneY.TerminalCopyComparison"
+      },
+      {
+        "from": "OneY.TerminalCopyComparison",
+        "to": "OneY.TerminalFrameDepths"
+      },
+      {
+        "from": "OneY.TerminalFrameDepths",
+        "to": "OneY.TerminalFrameParents"
+      },
+      {
+        "from": "OneY.TerminalFrameParents",
+        "to": "OneY.TerminalFrame"
+      },
+      {
+        "from": "OneY.TerminalFrame",
+        "to": "OneY.NumericFrameBlocker"
+      },
+      {
+        "from": "OneY.NumericFrameBlocker",
+        "to": "OneY.NumericFrame"
+      },
+      {
+        "from": "OneY.NumericFrame",
+        "to": "OneY.DepthMatrix"
+      },
+      {
+        "from": "OneY.DepthMatrix",
+        "to": "OneY.ForestFrameMatrix"
+      },
+      {
+        "from": "OneY.ForestFrameMatrix",
+        "to": "OneY.ForestFrame"
+      },
+      {
+        "from": "OneY.ForestFrame",
+        "to": "OneY.ForestBridge"
+      },
+      {
+        "from": "OneY.ForestBridge",
+        "to": "OneY.Forest"
+      },
+      {
+        "from": "OneY.ForestBridge",
+        "to": "ZeroY.Forest.Stack"
+      },
+      {
+        "from": "ZeroY.Forest.Stack",
+        "to": "ZeroY.Mountain.Termination"
+      },
+      {
+        "from": "ZeroY.Mountain.Termination",
+        "to": "ZeroY.Mountain"
+      },
+      {
+        "from": "ZeroY.Mountain",
+        "to": "ZeroY.Syntax"
+      },
+      {
+        "from": "OneY.ForestFrame",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "ZeroY.Forest.Blocker",
+        "to": "ZeroY.Forest.Stack"
+      },
+      {
+        "from": "OneY.ForestFrame",
+        "to": "ZeroY.Forest.MatrixParents"
+      },
+      {
+        "from": "ZeroY.Forest.MatrixParents",
+        "to": "ZeroY.Forest.Comparison"
+      },
+      {
+        "from": "ZeroY.Forest.Comparison",
+        "to": "ZeroY.Forest.Stack"
+      },
+      {
+        "from": "ZeroY.Forest.MatrixParents",
+        "to": "ZeroY.Mountain.Roots"
+      },
+      {
+        "from": "ZeroY.Mountain.Roots",
+        "to": "ZeroY.Mountain.SumInverse"
+      },
+      {
+        "from": "ZeroY.Mountain.SumInverse",
+        "to": "ZeroY.Decode"
+      },
+      {
+        "from": "ZeroY.Decode",
+        "to": "ZeroY.Mountain"
+      },
+      {
+        "from": "ZeroY.Mountain.SumInverse",
+        "to": "ZeroY.Mountain.Termination"
+      },
+      {
+        "from": "ZeroY.Forest.MatrixParents",
+        "to": "ZeroY.BMS.PaddedDescent"
+      },
+      {
+        "from": "ZeroY.BMS.PaddedDescent",
+        "to": "ZeroY.PaddedOrder"
+      },
+      {
+        "from": "ZeroY.PaddedOrder",
+        "to": "ZeroY.MatrixOrder"
+      },
+      {
+        "from": "ZeroY.MatrixOrder",
+        "to": "ZeroY.Mountain"
+      },
+      {
+        "from": "ZeroY.BMS.PaddedDescent",
+        "to": "ZeroY.BMS.AnyArray"
+      },
+      {
+        "from": "ZeroY.BMS.PaddedDescent",
+        "to": "ZeroY.Transport"
+      },
+      {
+        "from": "OneY.ForestFrameMatrix",
+        "to": "ZeroY.Structural.RawRecognition"
+      },
+      {
+        "from": "ZeroY.Structural.RawRecognition",
+        "to": "ZeroY.Structural.Recognition"
+      },
+      {
+        "from": "ZeroY.Structural.Recognition",
+        "to": "ZeroY.Structural.DecodeTower"
+      },
+      {
+        "from": "ZeroY.Structural.DecodeTower",
+        "to": "ZeroY.Reversible"
+      },
+      {
+        "from": "ZeroY.Reversible",
+        "to": "ZeroY.Image"
+      },
+      {
+        "from": "ZeroY.Image",
+        "to": "ZeroY.RoundTrip"
+      },
+      {
+        "from": "ZeroY.RoundTrip",
+        "to": "ZeroY.Mountain.Roots"
+      },
+      {
+        "from": "ZeroY.RoundTrip",
+        "to": "ZeroY.Mountain.Encoding"
+      },
+      {
+        "from": "ZeroY.Mountain.Encoding",
+        "to": "ZeroY.Mountain.Termination"
+      },
+      {
+        "from": "ZeroY.Mountain.Encoding",
+        "to": "ZeroY.MatrixOrder"
+      },
+      {
+        "from": "ZeroY.Mountain.Encoding",
+        "to": "ZeroY.Encode"
+      },
+      {
+        "from": "ZeroY.Encode",
+        "to": "ZeroY.Mountain"
+      },
+      {
+        "from": "ZeroY.RoundTrip",
+        "to": "ZeroY.Forest.Stack"
+      },
+      {
+        "from": "ZeroY.RoundTrip",
+        "to": "ZeroY.BMS.PaddedDescent"
+      },
+      {
+        "from": "ZeroY.Reversible",
+        "to": "ZeroY.OrderEmbedding"
+      },
+      {
+        "from": "ZeroY.OrderEmbedding",
+        "to": "ZeroY.Forest.Comparison"
+      },
+      {
+        "from": "ZeroY.OrderEmbedding",
+        "to": "ZeroY.Mountain.Roots"
+      },
+      {
+        "from": "ZeroY.OrderEmbedding",
+        "to": "ZeroY.Mountain.Encoding"
+      },
+      {
+        "from": "ZeroY.OrderEmbedding",
+        "to": "ZeroY.SequenceOrder"
+      },
+      {
+        "from": "ZeroY.SequenceOrder",
+        "to": "ZeroY.Syntax"
+      },
+      {
+        "from": "ZeroY.OrderEmbedding",
+        "to": "ZeroY.BMS.PaddedDescent"
+      },
+      {
+        "from": "ZeroY.Reversible",
+        "to": "ZeroY.Transport"
+      },
+      {
+        "from": "ZeroY.Structural.DecodeTower",
+        "to": "ZeroY.Structural.Prefix"
+      },
+      {
+        "from": "ZeroY.Structural.Prefix",
+        "to": "ZeroY.BMS.PaddedDescent"
+      },
+      {
+        "from": "ZeroY.Structural.DecodeTower",
+        "to": "ZeroY.Mountain.CommonChain"
+      },
+      {
+        "from": "ZeroY.Mountain.CommonChain",
+        "to": "ZeroY.OrderEmbedding"
+      },
+      {
+        "from": "ZeroY.Structural.Recognition",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "ZeroY.Structural.Recognition",
+        "to": "ZeroY.Forest.MatrixParents"
+      },
+      {
+        "from": "ZeroY.Structural.Recognition",
+        "to": "ZeroY.PaddedExt"
+      },
+      {
+        "from": "ZeroY.PaddedExt",
+        "to": "ZeroY.RoundTrip"
+      },
+      {
+        "from": "OneY.NumericFrame",
+        "to": "OneY.SparseDepth"
+      },
+      {
+        "from": "OneY.SparseDepth",
+        "to": "OneY.SparseBlocker"
+      },
+      {
+        "from": "OneY.SparseBlocker",
+        "to": "OneY.SparseComparison"
+      },
+      {
+        "from": "OneY.SparseComparison",
+        "to": "OneY.Numeric"
+      },
+      {
+        "from": "OneY.Numeric",
+        "to": "OneY.Forest"
+      },
+      {
+        "from": "OneY.Numeric",
+        "to": "ZeroY.Forest.Stack"
+      },
+      {
+        "from": "OneY.SparseComparison",
+        "to": "ZeroY.Mountain.CommonChain"
+      },
+      {
+        "from": "OneY.SparseBlocker",
+        "to": "OneY.ForestBridge"
+      },
+      {
+        "from": "OneY.SparseBlocker",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "OneY.SparseDepth",
+        "to": "OneY.NumericRoots"
+      },
+      {
+        "from": "OneY.NumericRoots",
+        "to": "OneY.NumericGeometry"
+      },
+      {
+        "from": "OneY.NumericGeometry",
+        "to": "OneY.Numeric"
+      },
+      {
+        "from": "OneY.NumericGeometry",
+        "to": "OneY.ForestBridge"
+      },
+      {
+        "from": "OneY.NumericGeometry",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.RootGeometry",
+        "to": "OneY.Forest"
+      },
+      {
+        "from": "OneY.RootGeometry",
+        "to": "OneY.Geometry"
+      },
+      {
+        "from": "OneY.NumericGeometry",
+        "to": "ZeroY.Mountain.Roots"
+      },
+      {
+        "from": "OneY.NumericFrame",
+        "to": "OneY.TopComparison"
+      },
+      {
+        "from": "OneY.TopComparison",
+        "to": "OneY.SparseComparison"
+      },
+      {
+        "from": "OneY.NumericFrameBlocker",
+        "to": "OneY.RelativeBlocker"
+      },
+      {
+        "from": "OneY.RelativeBlocker",
+        "to": "ZeroY.Structural.Expansion"
+      },
+      {
+        "from": "ZeroY.Structural.Expansion",
+        "to": "ZeroY.Structural.BlockerExpansion"
+      },
+      {
+        "from": "ZeroY.Structural.BlockerExpansion",
+        "to": "ZeroY.Structural.DepthExpansion"
+      },
+      {
+        "from": "ZeroY.Structural.DepthExpansion",
+        "to": "ZeroY.Structural.ExpansionCoordinates"
+      },
+      {
+        "from": "ZeroY.Structural.ExpansionCoordinates",
+        "to": "ZeroY.Structural.ExpansionParents"
+      },
+      {
+        "from": "ZeroY.Structural.ExpansionParents",
+        "to": "ZeroY.Structural.Prefix"
+      },
+      {
+        "from": "ZeroY.Structural.Expansion",
+        "to": "ZeroY.Structural.CopyOrder"
+      },
+      {
+        "from": "ZeroY.Structural.CopyOrder",
+        "to": "ZeroY.Structural.ExpansionCoordinates"
+      },
+      {
+        "from": "ZeroY.Structural.CopyOrder",
+        "to": "ZeroY.Forest.MatrixParents"
+      },
+      {
+        "from": "ZeroY.Structural.CopyOrder",
+        "to": "ZeroY.Forest.Comparison"
+      },
+      {
+        "from": "ZeroY.Structural.CopyOrder",
+        "to": "ZeroY.Forest.AncestorMonotone"
+      },
+      {
+        "from": "ZeroY.Forest.AncestorMonotone",
+        "to": "ZeroY.Forest.MatrixParents"
+      },
+      {
+        "from": "ZeroY.Forest.AncestorMonotone",
+        "to": "ZeroY.Mountain.CommonChain"
+      },
+      {
+        "from": "ZeroY.Structural.CopyOrder",
+        "to": "ZeroY.Mountain.CommonChain"
+      },
+      {
+        "from": "OneY.RelativeBlocker",
+        "to": "ZeroY.Structural.Recognition"
+      },
+      {
+        "from": "OneY.RelativeBlocker",
+        "to": "ZeroY.Structural.ExpansionParentAlignment"
+      },
+      {
+        "from": "ZeroY.Structural.ExpansionParentAlignment",
+        "to": "ZeroY.Structural.ExpansionParents"
+      },
+      {
+        "from": "ZeroY.Structural.ExpansionParentAlignment",
+        "to": "ZeroY.Expansion"
+      },
+      {
+        "from": "ZeroY.Expansion",
+        "to": "ZeroY.Mountain.Roots"
+      },
+      {
+        "from": "ZeroY.Expansion",
+        "to": "ZeroY.Decode"
+      },
+      {
+        "from": "OneY.RelativeBlocker",
+        "to": "ZeroY.Transport"
+      },
+      {
+        "from": "OneY.TerminalFrame",
+        "to": "OneY.TerminalCopyNumeric"
+      },
+      {
+        "from": "OneY.TerminalCopyNumeric",
+        "to": "OneY.BadRoot"
+      },
+      {
+        "from": "OneY.BadRoot",
+        "to": "OneY.Extraction"
+      },
+      {
+        "from": "OneY.Extraction",
+        "to": "OneY.ExtractionGeometry"
+      },
+      {
+        "from": "OneY.ExtractionGeometry",
+        "to": "OneY.NumericRoots"
+      },
+      {
+        "from": "OneY.ExtractionGeometry",
+        "to": "OneY.Pseudo"
+      },
+      {
+        "from": "OneY.Pseudo",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.Pseudo",
+        "to": "OneY.ForestBridge"
+      },
+      {
+        "from": "OneY.TerminalCopyNumeric",
+        "to": "OneY.TerminalCopyNesting"
+      },
+      {
+        "from": "OneY.TerminalCopyNesting",
+        "to": "OneY.TerminalCopy"
+      },
+      {
+        "from": "OneY.TerminalCopy",
+        "to": "OneY.CopyCoordinates"
+      },
+      {
+        "from": "OneY.TerminalCopy",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.TerminalFrame",
+        "to": "ZeroY.Expansion.Context"
+      },
+      {
+        "from": "ZeroY.Expansion.Context",
+        "to": "ZeroY.Expansion"
+      },
+      {
+        "from": "ZeroY.Expansion.Context",
+        "to": "ZeroY.Image"
+      },
+      {
+        "from": "OneY.TerminalFrameParents",
+        "to": "OneY.TerminalCopyReconstruction"
+      },
+      {
+        "from": "OneY.TerminalCopyReconstruction",
+        "to": "OneY.TerminalCopyNumeric"
+      },
+      {
+        "from": "OneY.TerminalCopyReconstruction",
+        "to": "OneY.OrdinaryCopyReconstruction"
+      },
+      {
+        "from": "OneY.OrdinaryCopyReconstruction",
+        "to": "OneY.OrdinaryCopyRoots"
+      },
+      {
+        "from": "OneY.OrdinaryCopyRoots",
+        "to": "OneY.OrdinaryCopy"
+      },
+      {
+        "from": "OneY.OrdinaryCopy",
+        "to": "OneY.CopyCoordinates"
+      },
+      {
+        "from": "OneY.OrdinaryCopy",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.OrdinaryCopyReconstruction",
+        "to": "OneY.ReconstructionNumeric"
+      },
+      {
+        "from": "OneY.ReconstructionNumeric",
+        "to": "OneY.Reconstruction"
+      },
+      {
+        "from": "OneY.Reconstruction",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.ReconstructionNumeric",
+        "to": "OneY.NumericGeometry"
+      },
+      {
+        "from": "OneY.TerminalCopyComparison",
+        "to": "OneY.DecoratedColumn"
+      },
+      {
+        "from": "OneY.DecoratedColumn",
+        "to": "ZeroY.Structural.Expansion"
+      },
+      {
+        "from": "OneY.TerminalCopyComparison",
+        "to": "OneY.LowerCopyComparison"
+      },
+      {
+        "from": "OneY.LowerCopyComparison",
+        "to": "OneY.LowerCopyDepths"
+      },
+      {
+        "from": "OneY.LowerCopyDepths",
+        "to": "OneY.LowerCopyDominance"
+      },
+      {
+        "from": "OneY.LowerCopyDominance",
+        "to": "OneY.LowerCopyNesting"
+      },
+      {
+        "from": "OneY.LowerCopyNesting",
+        "to": "OneY.LowerCopy"
+      },
+      {
+        "from": "OneY.LowerCopy",
+        "to": "OneY.CopyCoordinates"
+      },
+      {
+        "from": "OneY.LowerCopy",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.LowerCopyDominance",
+        "to": "OneY.Reconstruction"
+      },
+      {
+        "from": "OneY.LowerCopyDominance",
+        "to": "OneY.ReconstructionNumeric"
+      },
+      {
+        "from": "OneY.LowerCopyDominance",
+        "to": "OneY.Pseudo"
+      },
+      {
+        "from": "OneY.LowerCopyComparison",
+        "to": "OneY.SparseDepth"
+      },
+      {
+        "from": "OneY.LowerCopyComparison",
+        "to": "OneY.TopComparison"
+      },
+      {
+        "from": "OneY.LowerCopyComparison",
+        "to": "ZeroY.Forest.AncestorMonotone"
+      },
+      {
+        "from": "OneY.NumericDecoratedFrame",
+        "to": "OneY.ReconstructionComparison"
+      },
+      {
+        "from": "OneY.ReconstructionComparison",
+        "to": "OneY.LowerCopyComparison"
+      },
+      {
+        "from": "OneY.NumericDecoratedFrame",
+        "to": "OneY.DecoratedBlockerExpansion"
+      },
+      {
+        "from": "OneY.DecoratedBlockerExpansion",
+        "to": "OneY.DecoratedBlocker"
+      },
+      {
+        "from": "OneY.DecoratedBlocker",
+        "to": "OneY.DecoratedColumn"
+      },
+      {
+        "from": "OneY.TerminalDecoratedRecovery",
+        "to": "OneY.TerminalCopyCanonical"
+      },
+      {
+        "from": "OneY.TerminalCopyCanonical",
+        "to": "OneY.TerminalCopyReconstruction"
+      },
+      {
+        "from": "OneY.TerminalCopyCanonical",
+        "to": "OneY.OrdinaryCopyExtraction"
+      },
+      {
+        "from": "OneY.OrdinaryCopyExtraction",
+        "to": "OneY.OrdinaryCopyForest"
+      },
+      {
+        "from": "OneY.OrdinaryCopyForest",
+        "to": "OneY.OrdinaryCopySelection"
+      },
+      {
+        "from": "OneY.OrdinaryCopySelection",
+        "to": "OneY.OrdinaryCopyReconstruction"
+      },
+      {
+        "from": "OneY.OrdinaryCopySelection",
+        "to": "OneY.NumericRoots"
+      },
+      {
+        "from": "OneY.OrdinaryCopySelection",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "OneY.OrdinaryCopyExtraction",
+        "to": "OneY.OrdinaryCopyPseudo"
+      },
+      {
+        "from": "OneY.OrdinaryCopyPseudo",
+        "to": "OneY.OrdinaryCopyNumeric"
+      },
+      {
+        "from": "OneY.OrdinaryCopyNumeric",
+        "to": "OneY.OrdinaryCopySelection"
+      },
+      {
+        "from": "OneY.OrdinaryCopyPseudo",
+        "to": "OneY.Pseudo"
+      },
+      {
+        "from": "OneY.OrdinaryCopyExtraction",
+        "to": "OneY.Extraction"
+      },
+      {
+        "from": "OneY.TerminalCopyComplete",
+        "to": "OneY.TerminalCopyTopBound"
+      },
+      {
+        "from": "OneY.TerminalCopyTopBound",
+        "to": "OneY.TerminalFrameParents"
+      },
+      {
+        "from": "OneY.TerminalCopyTopBound",
+        "to": "OneY.ReconstructionTop"
+      },
+      {
+        "from": "OneY.ReconstructionTop",
+        "to": "OneY.ReconstructionComparison"
+      },
+      {
+        "from": "OneY.TerminalCopyTopBound",
+        "to": "OneY.OrdinaryCopyExtraction"
+      },
+      {
+        "from": "OneY.TerminalCopyRebuild",
+        "to": "OneY.TerminalCopyExtraction"
+      },
+      {
+        "from": "OneY.TerminalCopyExtraction",
+        "to": "OneY.TerminalCopyRoots"
+      },
+      {
+        "from": "OneY.TerminalCopyRoots",
+        "to": "OneY.TerminalCopyReconstruction"
+      },
+      {
+        "from": "OneY.TerminalCopyRoots",
+        "to": "OneY.OrdinaryCopyRoots"
+      },
+      {
+        "from": "OneY.TerminalCopyRoots",
+        "to": "OneY.OrdinaryCopyExtraction"
+      },
+      {
+        "from": "OneY.TerminalCopyExtraction",
+        "to": "OneY.PseudoSelection"
+      },
+      {
+        "from": "OneY.PseudoSelection",
+        "to": "OneY.PseudoCollapse"
+      },
+      {
+        "from": "OneY.PseudoCollapse",
+        "to": "OneY.Pseudo"
+      },
+      {
+        "from": "OneY.PseudoSelection",
+        "to": "OneY.ExtractionGeometry"
+      },
+      {
+        "from": "OneY.PseudoSelection",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "OneY.TerminalCopyTransport",
+        "to": "OneY.ActiveGeometry"
+      },
+      {
+        "from": "OneY.ActiveGeometry",
+        "to": "OneY.TopForestGeometry"
+      },
+      {
+        "from": "OneY.TopForestGeometry",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.TopForestGeometry",
+        "to": "OneY.PseudoSelection"
+      },
+      {
+        "from": "OneY.ActiveGeometry",
+        "to": "OneY.BadRoot"
+      },
+      {
+        "from": "OneY.ActiveGeometry",
+        "to": "OneY.LowerCopy"
+      },
+      {
+        "from": "OneY.TerminalCopyTransport",
+        "to": "OneY.LowerCopyBlocker"
+      },
+      {
+        "from": "OneY.LowerCopyBlocker",
+        "to": "OneY.LowerCopyDominance"
+      },
+      {
+        "from": "OneY.LowerCopyBlocker",
+        "to": "OneY.LowerCopyRoots"
+      },
+      {
+        "from": "OneY.LowerCopyRoots",
+        "to": "OneY.LowerCopyNesting"
+      },
+      {
+        "from": "OneY.LowerCopyBlocker",
+        "to": "OneY.SparseBlocker"
+      },
+      {
+        "from": "OneY.LowerCopyBlocker",
+        "to": "OneY.ReconstructionComparison"
+      },
+      {
+        "from": "OneY.TerminalCopyBottom",
+        "to": "OneY.FrameCopy"
+      },
+      {
+        "from": "OneY.FrameCopy",
+        "to": "OneY.CopyCoordinates"
+      },
+      {
+        "from": "OneY.FrameCopy",
+        "to": "OneY.ForestBridge"
+      },
+      {
+        "from": "OneY.TowerCopyAssembly",
+        "to": "OneY.ExpansionProperties"
+      },
+      {
+        "from": "OneY.ExpansionProperties",
+        "to": "OneY.Expansion"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.RootSearch"
+      },
+      {
+        "from": "OneY.RootSearch",
+        "to": "OneY.Build"
+      },
+      {
+        "from": "OneY.Build",
+        "to": "OneY.BadRoot"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.ActiveGeometry"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.LowerCopyNesting"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.TerminalCopyNumeric"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.OrdinaryCopy"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "OneY.TowerReconstruction"
+      },
+      {
+        "from": "OneY.TowerReconstruction",
+        "to": "OneY.ReconstructionNumeric"
+      },
+      {
+        "from": "OneY.TowerReconstruction",
+        "to": "OneY.Extraction"
+      },
+      {
+        "from": "OneY.Expansion",
+        "to": "ZeroY.Expansion"
+      },
+      {
+        "from": "OneY.TerminalTowerRebuild",
+        "to": "OneY.Prefix"
+      },
+      {
+        "from": "OneY.Prefix",
+        "to": "OneY.Extraction"
+      },
+      {
+        "from": "OneY.Prefix",
+        "to": "ZeroY.Forest.Comparison"
+      },
+      {
+        "from": "OneY.Prefix",
+        "to": "ZeroY.Expansion"
+      },
+      {
+        "from": "OneY.ExpansionRebuildPrefix",
+        "to": "OneY.RootIndexed.Prefix"
+      },
+      {
+        "from": "OneY.RootIndexed.Prefix",
+        "to": "OneY.RootIndexed.Diagram"
+      },
+      {
+        "from": "OneY.RootIndexed.Diagram",
+        "to": "OneY.RootIndexed.Representation"
+      },
+      {
+        "from": "OneY.RootIndexed.Diagram",
+        "to": "OneY.RootGeometry"
+      },
+      {
+        "from": "OneY.RootIndexed.Prefix",
+        "to": "OneY.Prefix"
+      },
+      {
+        "from": "OneY.ExpansionRebuildPrefix",
+        "to": "OneY.RootIndexed.CopyDiagram"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyDiagram",
+        "to": "OneY.RootIndexed.CopyCoordinates"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyCoordinates",
+        "to": "OneY.RootIndexed.Representation"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyCoordinates",
+        "to": "OneY.CopyCoordinates"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyDiagram",
+        "to": "OneY.RootIndexed.Prefix"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyDiagram",
+        "to": "OneY.RootIndexed.TerminalRoots"
+      },
+      {
+        "from": "OneY.RootIndexed.TerminalRoots",
+        "to": "OneY.TerminalCopyNesting"
+      },
+      {
+        "from": "OneY.RootIndexed.TerminalRoots",
+        "to": "OneY.Prefix"
+      },
+      {
+        "from": "OneY.RootIndexed.CopyDiagram",
+        "to": "OneY.ExpansionProperties"
+      },
+      {
+        "from": "OneY.ExpansionCanonical",
+        "to": "OneY.LowerTowerRebuild"
+      },
+      {
+        "from": "OneY.LowerTowerRebuild",
+        "to": "OneY.LowerTowerInputs"
+      },
+      {
+        "from": "OneY.LowerTowerInputs",
+        "to": "OneY.LowerCopyLayerTopBound"
+      },
+      {
+        "from": "OneY.LowerCopyLayerTopBound",
+        "to": "OneY.LowerCopyLayerTransport"
+      },
+      {
+        "from": "OneY.LowerCopyLayerTransport",
+        "to": "OneY.LowerCopyRebuild"
+      },
+      {
+        "from": "OneY.LowerCopyRebuild",
+        "to": "OneY.LowerCopyTransport"
+      },
+      {
+        "from": "OneY.LowerCopyTransport",
+        "to": "OneY.LowerCopyBottomRecovery"
+      },
+      {
+        "from": "OneY.LowerCopyBottomRecovery",
+        "to": "OneY.LowerCopyBottom"
+      },
+      {
+        "from": "OneY.LowerCopyBottom",
+        "to": "OneY.LowerCopyCanonical"
+      },
+      {
+        "from": "OneY.LowerCopyCanonical",
+        "to": "OneY.LowerCopyBadBlocker"
+      },
+      {
+        "from": "OneY.LowerCopyBadBlocker",
+        "to": "OneY.LowerCopyBlocker"
+      },
+      {
+        "from": "OneY.LowerCopyBadBlocker",
+        "to": "OneY.ReconstructionComparisonPrefix"
+      },
+      {
+        "from": "OneY.ReconstructionComparisonPrefix",
+        "to": "OneY.ReconstructionComparison"
+      },
+      {
+        "from": "OneY.ReconstructionComparisonPrefix",
+        "to": "OneY.Prefix"
+      },
+      {
+        "from": "OneY.LowerCopyCanonical",
+        "to": "OneY.ReconstructionTop"
+      },
+      {
+        "from": "OneY.LowerCopyBottom",
+        "to": "OneY.FrameCopy"
+      },
+      {
+        "from": "OneY.LowerCopyRebuild",
+        "to": "OneY.LowerCopyTopForest"
+      },
+      {
+        "from": "OneY.LowerCopyTopForest",
+        "to": "OneY.LowerCopyRoots"
+      },
+      {
+        "from": "OneY.LowerCopyTopForest",
+        "to": "OneY.FrameCopy"
+      },
+      {
+        "from": "OneY.LowerCopyTopForest",
+        "to": "OneY.SparseBlocker"
+      },
+      {
+        "from": "OneY.LowerCopyRebuild",
+        "to": "OneY.OrdinaryCopyExtraction"
+      },
+      {
+        "from": "OneY.LowerCopyRebuild",
+        "to": "OneY.PseudoSelection"
+      },
+      {
+        "from": "OneY.LowerCopyLayerTransport",
+        "to": "OneY.ActiveGeometry"
+      },
+      {
+        "from": "OneY.LowerCopyLayerTopBound",
+        "to": "OneY.LowerCopyTopBound"
+      },
+      {
+        "from": "OneY.LowerCopyTopBound",
+        "to": "OneY.LowerCopyPseudo"
+      },
+      {
+        "from": "OneY.LowerCopyPseudo",
+        "to": "OneY.LowerCopyPseudoLow"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoLow",
+        "to": "OneY.LowerCopyPseudoOutside"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoOutside",
+        "to": "OneY.LowerCopyPseudoHigh"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoHigh",
+        "to": "OneY.LowerCopyPseudoSeam"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoSeam",
+        "to": "OneY.LowerCopyComparison"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoHigh",
+        "to": "OneY.LowerCopyRoots"
+      },
+      {
+        "from": "OneY.LowerCopyPseudoLow",
+        "to": "OneY.FirstMatch"
+      },
+      {
+        "from": "OneY.FirstMatch",
+        "to": "OneY.Pseudo"
+      },
+      {
+        "from": "OneY.FirstMatch",
+        "to": "ZeroY.Forest.Blocker"
+      },
+      {
+        "from": "OneY.LowerCopyPseudo",
+        "to": "OneY.FrameCopy"
+      },
+      {
+        "from": "OneY.LowerCopyPseudo",
+        "to": "OneY.SingleContraction"
+      },
+      {
+        "from": "OneY.SingleContraction",
+        "to": "OneY.PseudoSelection"
+      },
+      {
+        "from": "OneY.SingleContraction",
+        "to": "OneY.SparseDepth"
+      },
+      {
+        "from": "OneY.SingleContraction",
+        "to": "OneY.LowerCopyPseudoSeam"
+      },
+      {
+        "from": "OneY.LowerCopyTopBound",
+        "to": "OneY.LowerCopyTopForest"
+      },
+      {
+        "from": "OneY.LowerCopyTopBound",
+        "to": "OneY.ReconstructionTop"
+      },
+      {
+        "from": "OneY.LowerCopyTopBound",
+        "to": "OneY.ExtractionGeometry"
+      },
+      {
+        "from": "OneY.LowerCopyLayerTopBound",
+        "to": "OneY.TerminalCopyExternal"
+      },
+      {
+        "from": "OneY.LowerTowerInputs",
+        "to": "OneY.TerminalCopyUpperOrder"
+      },
+      {
+        "from": "OneY.LowerTowerInputs",
+        "to": "OneY.TerminalTowerRebuild"
+      },
+      {
+        "from": "OneY.RootIndexed.ExpansionWellFounded",
+        "to": "OneY.RootIndexed.ActualScheme"
+      },
+      {
+        "from": "OneY.RootIndexed.ActualScheme",
+        "to": "OneY.RootIndexed.SpliceGeometry"
+      },
+      {
+        "from": "OneY.RootIndexed.SpliceGeometry",
+        "to": "OneY.RootIndexed.VirtualNeeds"
+      },
+      {
+        "from": "OneY.RootIndexed.VirtualNeeds",
+        "to": "OneY.RootIndexed.LowerAtoms"
+      },
+      {
+        "from": "OneY.RootIndexed.LowerAtoms",
+        "to": "OneY.RootIndexed.CopyDiagram"
+      },
+      {
+        "from": "OneY.RootIndexed.LowerAtoms",
+        "to": "OneY.LowerCopyRoots"
+      },
+      {
+        "from": "OneY.RootIndexed.SpliceGeometry",
+        "to": "OneY.RootIndexed.OrdinaryAtoms"
+      },
+      {
+        "from": "OneY.RootIndexed.OrdinaryAtoms",
+        "to": "OneY.RootIndexed.LowerAtoms"
+      },
+      {
+        "from": "OneY.RootIndexed.OrdinaryAtoms",
+        "to": "OneY.OrdinaryCopyRoots"
+      },
+      {
+        "from": "OneY.RootIndexed.OrdinaryAtoms",
+        "to": "OneY.TerminalCopyRoots"
+      },
+      {
+        "from": "OneY.RootIndexed.ExpansionWellFounded",
+        "to": "ZeroY.Transport"
+      }
+    ]
+  },
+  "side_branch_search": {
+    "roots": [
+      "formalization/OneY/**/*.lean",
+      "formalization/ZeroY/**/*.lean"
+    ],
+    "pattern": "framedStep_wellFounded",
+    "matches": [
+      {
+        "path": "OneY/RelativeBlocker.lean",
+        "line": 573,
+        "text": "theorem framedStep_wellFounded (base : Nat)"
+      },
+      {
+        "path": "OneY/RelativeBlocker.lean",
+        "line": 590,
+        "text": "#print axioms OneY.RelativeBlocker.framedStep_wellFounded"
+      }
+    ],
+    "finding": "only declaration and #print axioms; no calling theorem in search scope"
+  },
+  "encoding_contract": {
+    "namespace": "KP1Y.OneYFinite",
+    "expression_data_fields": [
+      "omega",
+      "zero",
+      "one",
+      "sequences",
+      "expressions"
+    ],
+    "sequence": "m in omega and Graph M s m omega",
+    "legal": "all values positive and (m=zero or MemPair M s zero one)",
+    "E": "actual Delta0 subset of the existing finite sequence set",
+    "parent": "partial functional relation on m x m, each (c,p) has p<c",
+    "trace": "actual finite graph over a fixed natural-record space; every local step has a Delta0 verifier",
+    "edge_code": "((k,q),(p,j)) using Reflection.Quad",
+    "need_code": "(k,(q,p)) using Ranking.Packet",
+    "copy_width": "x+N*(x-y)",
+    "copy_source": "y+1+((c-y-1) mod (x-y))",
+    "copy_block": "(c-y-1) div (x-y)",
+    "copy_parent": "if p<y then p else p+b*(x-y)",
+    "reconstruction": "fuel c+1 or equivalent internal finite dynamic program",
+    "nonstandard_indices": "all variable indices and lengths are M.Domain elements of internal omega"
+  },
+  "suggested_subtasks": [
+    {
+      "id": "Y01a",
+      "title": "实际表达式 E 与合法性",
+      "depends": [
+        "Y00",
+        "F02"
+      ],
+      "owned_files": [
+        "KP1Y/OneYExpression.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y01b",
+      "title": "内部有限计算基础",
+      "depends": [
+        "Y01a"
+      ],
+      "owned_files": [
+        "KP1Y/OneYFiniteComputation.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y02a",
+      "title": "有限父图、祖先、最右搜索",
+      "depends": [
+        "Y01b"
+      ],
+      "owned_files": [
+        "KP1Y/OneYAncestry.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y02b",
+      "title": "数值山形、伪父、提取",
+      "depends": [
+        "Y02a"
+      ],
+      "owned_files": [
+        "KP1Y/OneYMountain.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y02c",
+      "title": "提取界、坏根与实际图",
+      "depends": [
+        "Y02b"
+      ],
+      "owned_files": [
+        "KP1Y/OneYExtractionBounds.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y03a",
+      "title": "BM4 有限帧与父图运输",
+      "depends": [
+        "Y01b",
+        "Y02a"
+      ],
+      "owned_files": [
+        "KP1Y/OneYFrameTransport.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y03b",
+      "title": "相对阻挡与接缝比较",
+      "depends": [
+        "Y03a"
+      ],
+      "owned_files": [
+        "KP1Y/OneYFiniteBlocker.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y04a",
+      "title": "统一复制定义与几何分类",
+      "depends": [
+        "Y02c",
+        "Y03b"
+      ],
+      "owned_files": [
+        "KP1Y/OneYCopyInvariant.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y04b",
+      "title": "精确 Adm、反射拼接与内部 N 归纳",
+      "depends": [
+        "Y04a",
+        "F06"
+      ],
+      "owned_files": [
+        "KP1Y/OneYCopySeams.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y05a",
+      "title": "有限重建、燃料算法与唯一性",
+      "depends": [
+        "Y01b",
+        "Y02b"
+      ],
+      "owned_files": [
+        "KP1Y/OneYReconstruction.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y05b",
+      "title": "实际展开及规范重提取",
+      "depends": [
+        "Y05a",
+        "Y03b",
+        "Y04a"
+      ],
+      "owned_files": [
+        "KP1Y/OneYExpansion.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    },
+    {
+      "id": "Y06",
+      "title": "内部展开末标签下降",
+      "depends": [
+        "Y04b",
+        "Y05b",
+        "F06"
+      ],
+      "owned_files": [
+        "KP1Y/OneYCopyDescent.lean"
+      ],
+      "status": "not_implemented",
+      "merge_policy": "coordinator alone edits root imports, Audit.lean and shared stage manifests"
+    }
+  ],
+  "required_tracker_dependency_changes": [
+    {
+      "task": "Y03",
+      "add_gate": "Y02a Forest contract must be frozen before concrete frame work"
+    },
+    {
+      "task": "Y05b",
+      "add_dependency": "Y04a unique copied-tower and coordinate definitions"
+    },
+    {
+      "task": "Y05a",
+      "allow_early_start_after": [
+        "Y01b",
+        "Y02b"
+      ]
+    }
+  ],
+  "verification_requirements": [
+    "No sorry/admit/new axioms",
+    "No omega-standardness or external WellFounded M.mem",
+    "Exact internal algorithm totality and uniqueness",
+    "Actual expression set E and actual Expand graph",
+    "All object formulas carry correct complexity, free-closed and semantic equivalence proofs",
+    "Only owned stable modules checked incrementally; no full build"
+  ]
+}

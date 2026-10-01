@@ -1,0 +1,21 @@
+[
+  "AssignmentFamilyPatch",
+  "ReflectionBasicBlockTruth",
+  "ReflectionBasicBlocks",
+  "ReflectionBasicCompilation",
+  "ReflectionBasicHeight",
+  "ReflectionBinaryBlock",
+  "ReflectionBinaryBlockTruth",
+  "ReflectionBinaryCode",
+  "ReflectionBinarySemantics",
+  "ReflectionGroundParameters",
+  "ReflectionLayerParameters",
+  "ReflectionNameFrame",
+  "ReflectionNameFrameFacts",
+  "ReflectionOutputRestriction",
+  "ReflectionParameterAssignment",
+  "ReflectionPrefixBlock",
+  "ReflectionShapeEntries",
+  "ReflectionTemplateShape",
+  "UniformConjoinBlock"
+]

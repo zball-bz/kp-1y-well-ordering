@@ -1,0 +1,33 @@
+Checked 20/567 local modules
+Checked 40/567 local modules
+Checked 60/567 local modules
+Checked 80/567 local modules
+Checked 100/567 local modules
+Checked 120/567 local modules
+Checked 140/567 local modules
+Checked 160/567 local modules
+Checked 180/567 local modules
+Checked 200/567 local modules
+Checked 220/567 local modules
+Checked 240/567 local modules
+Checked 260/567 local modules
+Checked 280/567 local modules
+Checked 300/567 local modules
+Checked 320/567 local modules
+Checked 340/567 local modules
+Checked 360/567 local modules
+Checked 380/567 local modules
+Checked 400/567 local modules
+Checked 420/567 local modules
+Checked 440/567 local modules
+Checked 460/567 local modules
+Checked 480/567 local modules
+Checked 500/567 local modules
+Checked 520/567 local modules
+Checked 540/567 local modules
+Checked 560/567 local modules
+PASS: 567 local modules validated (567 checked, 0 cached), autoImplicit=false; third-party artifacts reused.
+
+real	3m55.541s
+user	7m6.102s
+sys	1m33.485s

@@ -1,0 +1,17 @@
+{
+  "modules": [
+    "KP1Y.OneYRankDescentStatement",
+    "KP1Y.OneYRankDescent"
+  ],
+  "audit_names": [
+    "KP1Y.OneYRank.MinimumRank.descends_of_copy_d",
+    "KP1Y.OneYRank.minimum_rank_descent_of_copy_descent",
+    "KP1Y.OneYRank.rank_transfer_of_copy_descent_d",
+    "KP1Y.OneYRank.rank_transfer_graph_of_copy_descent_d"
+  ],
+  "status": "passed",
+  "closure": 490,
+  "checked": 3,
+  "cached": 487,
+  "audit_declarations": 3722
+}

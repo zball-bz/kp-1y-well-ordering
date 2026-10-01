@@ -1,0 +1,11 @@
+PASS: 1525 declarations; only propext, Classical.choice, Quot.sound.
+Traceback (most recent call last):
+  File "/home/dev/ggg/kp-simplified-verification/tracker/refresh.py", line 255, in <module>
+    main()
+    ~~~~^^
+  File "/home/dev/ggg/kp-simplified-verification/tracker/refresh.py", line 242, in main
+    record_current_audit()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/dev/ggg/kp-simplified-verification/tracker/refresh.py", line 88, in record_current_audit
+    raise ValueError('Current source/stage/audit mismatch; cannot record receipt.')
+ValueError: Current source/stage/audit mismatch; cannot record receipt.

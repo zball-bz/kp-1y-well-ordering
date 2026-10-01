@@ -1,0 +1,306 @@
+1-Y well-ordering in KP                                                                   Simplified proof
+
+
+                     A Short Proof of 1-Y Well-Ordering
+                                             in KP with ω1
+                                Simplified version · 12 September 2026
+
+                                                  Abstract
+          One elementary-substructure argument replaces the separate counterexample and exten-
+      sion operations of the longer proof. Only one recursively defined relation table is needed.
+      The axiom bound remains Kripke–Platek set theory with infinity, full set induction, and
+      an uncountable ordinal. The finite mountain reconstruction and copying results are cited
+      from Phyrion’s supplied manuscript; the new ordinal argument is proved below. This is a
+      mathematical proof using those results, not a new machine-checked proof.
+
+
+1     The statement and the finite combinatorial input
+Here KPω has Extensionality, Empty Set, Pairing, Union, Infinity, ∆0 -Separation, ∆0 -Collection,
+and full set induction. An uncountable ordinal means an ordinal ν > ω for which no set function
+maps ω onto ν.
+    Use the inherited-ancestry 1-Y algorithm of [1, Sections 1–2]. Its legal expressions are
+
+                 E = {∅} ∪ {(a0 , . . . , am−1 ) : 0 < m < ω, a0 = 1, 0 < ai < ω}.
+
+The operation EN makes N additional copies of the bad part; E0 deletes the last entry and
+EN (∅) = ∅. Put t ≺ s if t ̸= s and t = EN (s) for some N < ω. Let Desc(s) be the finite-step
+descendants of s, including s, and let G be the descendants of the seeds (1, m), m ≥ 2.
+Theorem 1. In KPω , the existence of an uncountable ordinal ν implies the existence of an
+ordinal χ ≤ ν and a set function µ : E → χ such that
+
+                    µ(∅) = 0,        s ̸= ∅ =⇒ µ(EN (s)) < µ(s)                (N < ω).                (1)
+
+Hence ≺ is well-founded, every expansion trajectory reaches ∅, and lexicographic order well-
+orders each Desc(s) and G.
+
+  Lexicographic order regards a proper prefix as smaller. Its well-ordering is asserted on the
+specified descendant sets, not on all of E.
+   We state precisely the finite representation interface from [1, Sections 3, 6–7]. A rooted
+diagram has a width m < ω and finitely many atoms
+
+                             (k, q, p, j),       k < ω,       q ≤ p < j < m.
+
+Given an ordinal label set D and a relation R(k, η, a, b), a representation of this diagram is a
+strictly increasing map f : m → D satisfying
+
+                            R(k, f (q), f (p), f (j))         ((k, q, p, j) ∈ A).
+
+Write Rep(A, f ) for all these conditions. An endpoint template N is a finite set of triples
+(k, q, p), q ≤ p < m, and
+                                                      ^
+                          Endb (N , f ) ⇐⇒                    R(k, f (q), f (p), b).
+                                                  (k,q,p)∈N
+
+For c < m, its admissibility at (K, θ) is
+                                             ^                                            
+             AdmK,θ (N , f, c) ⇐⇒                 k < K ∨ (k = K ∧ q < c ∧ f (q) < θ) .                (2)
+                                      (k,q,p)∈N
+
+
+                                                      1
+1-Y well-ordering in KP                                                                  Simplified proof
+
+
+Definition 2 (Reflection clause). The clause FRK,θ (a, b) says: for every finite A, N , every
+c < m, and every representation f of A with f (c) = a and all f (i) < b, if AdmK,θ (N , f, c) and
+Endb (N , f ), then there is a representation g of A such that
+                      g ↾ c = f ↾ c,       g(i) < a (i < m),         Enda (N , g).                    (3)
+The internal atoms of A may have arbitrary layer indices.
+
+   The complete finite mountain of s gives a diagram A(s): an edge from column j to its parent
+p in layer k, with component root q, contributes (k, q, p, j). The row number is not part of the
+atom. The mountain and each single expansion are finite: positive differences bound column
+heights, and extraction lowers every bottom value greater than 1 until an all-1 layer is reached
+[1, Lemma 2.1].
+Lemma 3 (Finite copying interface). Suppose R(k, η, a, b) implies η ≤ a < b, permits root
+weakening
+                        R(k, η, a, b), ξ ≤ η =⇒ R(k, ξ, a, b),
+and implies FRk,η (a, b) whenever b ∈ D. If s ̸= ∅ has a representation with last label β, then
+each nonempty EN (s) has a representation with last label below β.
+
+Proof. Use the finite copying invariant and canonical reconstruction of [1, Lemmas 2.2 and
+7.1]. The original edges initialize the invariant, with the last label β ∈ D as virtual endpoint.
+Deletion restricts the old representation. For a copy step, let f be the current width-n labeling,
+c its cut, and α = f (c); all labels are below β. Reflect the invariant’s finite diagram, including
+retained source facts, to g < α. Append the old tail:
+                                   h = g ⌢ (f (c), . . . , f (n − 1)).
+This is strictly increasing: g lies below α, and the appended tail starts at α. Its labels stay in D
+and below β. Old atoms hold by reflection, transferred atoms by retained source facts and root
+weakening, and seam atoms by the reflected endpoint template. The cited invariant updates
+the retained facts and templates for the next copy. Finite induction gives the copied diagram;
+canonical reconstruction identifies it with A(EN (s)).
+
+   Thus the geometric case analysis remains an explicit cited input. We now construct the
+relation and initial representations needed to apply it.
+
+
+2    One relation table
+For now work in KPω + V = L, with an uncountable ordinal. Let κ be the least one. There is a
+set function
+                     e : κ × ω → κ,    e(α, ·) : ω ↠ α (0 < α < κ).                      (4)
+Indeed, ∆0 -Collection gathers a set C containing a surjection for every positive α < κ. A
+constructible level containing C supplies a canonical well-order of C. Bounded least choice in
+this well-order selects one surjection for each α, yielding e. Set e(0, n) = 0. This is the only use
+of V = L in the construction before the final transfer.
+    Put
+                           D = {a : ω < a ≤ κ},            B = (κ + 1)<ω .
+Define a single table R, up to upper endpoint κ, by
+                                                                                    
+               R(K, θ, a, b) ⇐⇒ K < ω, θ ≤ a < b ≤ κ, ω < a, FRK,θ (a, b) .                           (5)
+The clause on the right uses the same R. Invalid tuples are false.
+
+                                                   2
+1-Y well-ordering in KP                                                            Simplified proof
+
+
+Lemma 4. Equation (5) defines a set relation in KP. It has all the properties in Lemma 3.
+
+Proof. Recurse first on b, then on K, then on θ, defining all a-entries at one stage. Every query
+on the right of (5) is earlier. Internal input edges end below b; all output edges end at or below
+a < b. An input endpoint edge ends at b, but (2) gives either a smaller layer or the same layer
+with a smaller root index.
+    To make this an actual ordinal recursion, set
+
+                               L = (κ + 1) · ω,       Γ = L · (κ + 1),
+
+and place stage (b, K, θ) at
+
+                            L · b + (κ + 1) · K + θ < Γ    (θ < b ≤ κ).
+
+Unused stages have empty rows. Diagram and template shapes are coded in ω; label tuples and
+candidate outputs range over B. Given the earlier history, the next row is a boundedly defined
+subset of κ + 1, so exists by ∆0 -Separation. Valid histories have a bounded verification predicate
+and agree on their common domains by induction. At limits, the derived Σ1 -Collection scheme
+gathers the shorter histories; their compatible union is the next history. This constructs the full
+table in KP.
+  Strict endpoints and reflection follow from (5). If ξ ≤ θ, every template admitted at
+(K, ξ) is admitted at (K, θ), so the latter reflection clause implies the former. This gives root
+weakening.
+
+
+3     Initial representations from one elementary structure
+Extend e to a total binary function on κ, with value 0 on unused inputs. Introduce the
+top-section predicate
+                              P (K, θ, a) ⇐⇒ R(K, θ, a, κ),
+and consider the finite-language set structure
+
+                                      A = (κ; <, R, P, e, ω).                                   (6)
+
+Here R is restricted to tuples from κ, and ω is a constant. The extra predicate P lets us discuss
+edges to κ while keeping the entire domain equal to κ.
+Lemma 5 (Elementary initial segments). For every γ < κ, there is δ with
+
+                               max{ω, γ} < δ < κ,         A ↾ δ ≼ A.
+
+Proof. KP constructs the satisfaction relation of the set structure A: recurse over finite formulas
+and assignments, or use [2, Lemma 2.6] and the derived ∆1 -Separation scheme. This concerns a
+set domain, not a truth predicate for the universe.
+   For each formula ∃x φ(x, ⃗y ), take its least ordinal witness in κ, or 0 if there is none. These
+countably many finite-arity Skolem operations have set graphs, using the satisfaction set and
+bounded separation. Close ω ∪ {ω, γ} under them and e. Call the resulting set H. Explicitly,
+H is the range of evaluation of finite closed terms in a countable language. Term codes lie in ω,
+and evaluation certificates lie in B; bounded separation and finite induction therefore give a set
+surjection ω ↠ H. The witness criterion for elementarity gives A ↾ H ≼ A.
+   If 0 < α ∈ H, then (4) and closure give every ξ < α as e(α, n) ∈ H. Thus H is an ordinal
+δ ≤ κ. It contains ω, γ, so both are below δ. Equality δ = κ would give a surjection ω ↠ κ, a
+contradiction.
+
+                                                  3
+1-Y well-ordering in KP                                                                       Simplified proof
+
+
+   Call such a δ an elementary height. No collapse theorem, regularity theorem, or choice
+principle was used.
+
+Lemma 6 (Two reflection observations). For every elementary height δ,
+
+                P (K, θ, a) ⇐⇒ R(K, θ, a, δ)                      (θ ≤ a < δ, K < ω),                      (7)
+                P (K, θ, δ)                                       (θ ≤ δ, K < ω).                          (8)
+
+Proof. For (7), induct first on K, then on θ, simultaneously for all a with θ ≤ a < δ. If a ≤ ω,
+both sides are false by the guard in (5). Assume ω < a.
+   If P (K, θ, a) holds, take a demand at upper endpoint δ. Every input endpoint query is earlier
+in the induction by (2). The induction hypothesis changes these queries to P -queries, hence to
+edges ending at κ. We obtain a demand for R(K, θ, a, κ). Its output lies below a, and all its
+edge queries end at or below a; it is therefore an output for the original demand at δ.
+   If P (K, θ, a) fails, validity and (5) give a finite counterexample to reflection at κ. Fix its finite
+diagram shape, template, and cut. For this shape, the assertion that a counterexample exists
+is a single first-order formula in A: it quantifies the finitely many input labels, requires their
+internal R-edges and top P -edges, and denies the existence of a representing tuple satisfying (3).
+Its parameters are a, θ, ω and finitely many natural layer indices. All belong to δ. Elementarity
+supplies such a counterexample with all input labels below δ. The induction hypothesis changes
+its top premises to edges ending at δ. Candidate outputs still lie below a, and their queries
+end at or below a, so neither the candidates nor their truth conditions change. The same
+counterexample refutes R(K, θ, a, δ). This proves (7).
+   To prove (8), take a demand with cut label f (c) = δ and upper endpoint κ. Fix only its
+prefix u = f ↾ c; every coordinate of u is below δ. In A, the original f witnesses the first-order
+assertion                                                                     
+                                                              ^
+                ∃g0 · · · gm−1 Rep(A, g) ∧ g ↾ c = u ∧                P (k, g(q), g(p)) .
+                                                           (k,q,p)∈N
+
+For the fixed finite shape this is a finite formula with parameters in δ. Elementarity gives a
+witness g entirely below δ. Equation (7) turns its top P -edges into edges ending at δ, so g
+satisfies (3). The formula does not fix g(c) = δ and does not use θ as a parameter; thus the
+case θ = δ is included.
+
+Corollary 7. Every finite rooted diagram has a representation below κ.
+
+Proof. If α < β are elementary heights and θ ≤ α, first apply (8) at α, then (7) at β:
+
+                                            R(K, θ, α, β).
+
+For width m, finite iteration of Lemma 5 gives increasing elementary heights δ0 , . . . , δm−1 . Set
+f (i) = δi . Every atom (k, q, p, j) is satisfied by the displayed relation because δq ≤ δp < δj .
+Width 0 uses the empty representation.
+
+
+4    The rank, well-ordering, and the final axiom reduction
+Still in KPω + V = L, define µ(∅) = 0 and, for nonempty s,
+
+                  µ(s) = min{b < κ : (∃f ∈ B) [Rep(A(s), f ) ∧ f (|s| − 1) = b]}.                          (9)
+
+Corollary 7 makes the set nonempty. Expression codes lie in ω; their finite algorithm graphs
+are sets in KP. Thus (9) defines a set function by bounded separation on E × κ.
+
+                                                   4
+1-Y well-ordering in KP                                                                Simplified proof
+
+
+   Choose a representation attaining µ(s). Lemmas 3 and 4 give every nonempty EN (s) a
+representation with smaller last label; all its labels remain below κ. Minimization gives
+
+                                          µ(EN (s)) < µ(s).
+
+For an empty output, the same inequality follows from 0 < µ(s). This proves (1) under V = L.
+
+Remove V = L. Ordinary KP has its constructible inner model L |= KPω + V = L, with
+the same ordinals and natural numbers [3]. The hierarchy construction is available in KP [2,
+Theorem 2.8]. For its collection axiom, ambient Σ1 -Collection gathers constructible witnesses
+together with levels containing them; one larger level bounds all witnesses. The other KP
+axioms relativize in the usual way, with full induction following from transitivity.
+   Now fix an ambient uncountable ordinal ν. It is also uncountable in L, since a surjection
+belonging to L would be a surjection externally. In L, perform the construction above at its
+least uncountable ordinal χ ≤ ν, obtaining an actual set function µ : E → χ. The same µ
+satisfies (1) externally: finite expressions and their finite expansion computations are absolute,
+as are membership in this function and comparison of its ordinal values. We transfer the rank
+witness, not the assertion that L has no descending chain. Whether χ remains uncountable
+externally is irrelevant.
+
+Well-foundedness and termination. For any nonempty ambient set X ⊆ E, its set of
+µ-values has a least ordinal. An expression attaining it is ≺-minimal by (1). If a set-coded
+trajectory never reaches ∅, its ranks strictly decrease; a least value among those ranks contradicts
+the next step. Neither argument requires dependent choice.
+
+Lexicographic order.       The finite numerical facts of [1, Lemma 9.1 and Section 9] are:
+
+                EN (s) <lex s (s ̸= ∅),       i ≤ j =⇒ Ei (s) is a prefix of Ej (s),
+
+every prefix is reachable by E0 -steps, and
+
+                              E1 (1, n + 2) = (1, n + 1)      (n < ω).
+
+Induct on µ(s) to compare two descendants of s by reachability. If one is s, comparison
+is immediate. Otherwise their paths begin at Ei (s), Ej (s); assume i ≤ j. The prefix facts
+make both expressions descendants of Ej (s), whose rank is smaller, so induction applies.
+Consequently, on Desc(s), strict lexicographic comparison is exactly nonempty nontrivial
+expansion reachability: the reverse direction would contradict lexicographic descent. Hence µ
+strictly preserves lexicographic order there.
+   Any two seeds have a common larger seed ancestor by the last displayed identity. Thus the
+same conclusion holds on G. Minimizing ranks of arbitrary nonempty subsets now proves the
+asserted lexicographic well-orderings, completing Theorem 1.
+
+What the simplification uses. The additional model-theoretic object is one ordinary
+satisfaction set for A. KP supplies it, its least-witness operations, and their finite-term closure.
+The relation table still uses only bounded row definitions and collection of compatible histories.
+Thus the shorter proof keeps the same axiom bound; it establishes no claim of minimal proof-
+theoretic strength. The cited finite geometric proofs and this new set-theoretic proof have not
+been independently translated here into a checked KP or Lean derivation.
+
+
+
+                                                  5
+1-Y well-ordering in KP                                                                Simplified proof
+
+
+References
+[1] Phyrion. Well-Ordering of the 1-Y Sequence System: Proof Exposition and Lean 4 Formalization.
+    Chinese manuscript supplied with this discussion, 10 September 2026. The finite results used
+    here are in Sections 2–3, 6–7, and 9. https://github.com/Phyrion1343/1Y-Well-Ordering-Lean.
+    Reported snapshot: df3b69eea954c4640067e2b79d6c238a7217ce24.
+
+[2] Zachiri McKenzie. On the Relative Strengths of Fragments of Collection. arXiv:1806.08500v4, 10
+    January 2019. https://arxiv.org/pdf/1806.08500v4. Lemma 2.6 (p. 6) gives ∆1 -definability of
+    satisfaction for set structures. Theorem 2.8 (p. 7) states that the constructible-hierarchy function
+    is total and ∆1 in KPI. These locators use the checked v4 PDF; its Lemma 2.7 is a different result
+    about satisfaction in the theory M.
+
+[3] Michael Rathjen. Power Kripke–Platek Set Theory and the Axiom of Choice. 2018. https://arxiv.
+    org/abs/1801.01897. Cited for the ordinary KP constructible-inner-model fact, not a Power-KP
+    result.
+
+
+
+
+                                                   6
+

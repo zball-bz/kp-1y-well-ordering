@@ -1,0 +1,8 @@
+{
+  "source": "/home/dev/ggg/1Y-Well-Ordering-Lean/vendor/bms",
+  "repo_commit": "6533b2975f3cafb3582dc8f8127e9ea7144d7e69",
+  "changed_file": "YesMetaZFC/SetTheory/Notation/Surface.lean",
+  "change": "sentence! FreeClosed certificate: native_decide -> decide_cbv (kernel-checked); generated formula unchanged",
+  "before_sha256": "10f6df2712aae0a6aa71d9bfcaf92806ee81d3f515d06051f922162b3f499761",
+  "after_sha256": "80225f10e73914c1fbb914ce50dc3984bd9b0b7eddda8225839dcae60ab166ad"
+}

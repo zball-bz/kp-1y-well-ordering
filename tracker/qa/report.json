@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-13T12:53:05.772Z",
+  "method": "local Chrome headless + CDP; no Lean invoked",
+  "checks": [
+    "overview phases and visible state",
+    "all 78 cards",
+    "task detail keeps incomplete prerequisites",
+    "graph neighborhood and zoom",
+    "current continuation waves",
+    "source declaration search",
+    "evidence separates frozen and delivered scope",
+    "11 delivered packages",
+    "mobile overview no page overflow"
+  ],
+  "errors": [],
+  "screenshots": [
+    "overview-desktop",
+    "board-desktop",
+    "graph-desktop",
+    "overview-mobile"
+  ]
+}

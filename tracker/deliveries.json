@@ -1,0 +1,454 @@
+{
+  "Y02b": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMountain": {
+        "fingerprint": "480ae6e2d14d4725a53a87b2c8056ddbed2c672fed72d7109a02db8641201c7d",
+        "source": "53a93e26c78629c66d1a42a75404e69043d91aabf03ab9b23f2acd93df5ba0d9",
+        "artifact": "57a7be7b0776866c10605435f2b9ed908f8f966ce0ff19255345e123733288bf",
+        "log": "OneYMountain-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYForestSpace": {
+        "fingerprint": "b4312665ae8ae9c6f6b20b38c9a47bbaeb31f9a278072b7dd7bb78b5b7069c4c",
+        "source": "65b2817b8b02004a2c31628d67c1c2cc1d832ac2d42dfd00092db1c7280944c9",
+        "artifact": "51fe370954370a2389e8ab2d57e80b8781ffd7f85eedbf0f798cf48f7c3f4daa",
+        "log": "OneYForestSpace-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y04p": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYCopyCoordinates": {
+        "fingerprint": "fd9fd7e94f6830c83dc49cdffead00e0039956933b9866fefd7f96fc4362f81e",
+        "source": "2c37395b4f013dbda1b2fb03a14dce39f22ac25a5cf149e2ef608cfb03a3a821",
+        "artifact": "3a8a06bb75b443d205be969cc0b994c98b6731cfbeef55788e282f8c2c3487c2",
+        "log": "OneYCopyCoordinates-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y02e": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMountainHeight": {
+        "fingerprint": "ab8fa4b32e03efce301e9ac96febf99e392079670c9e8b04c2300b73c383fa97",
+        "source": "f88d562965430be21ae3e3b6749cf9c578352b3eaebf4ff448c9663f4e122164",
+        "artifact": "2b9b45a41aa56eb186a611e63566f29d6e07ee38096eed3ab59cb589d453950a",
+        "log": "OneYMountainHeight-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y02f": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMountainExtraction": {
+        "fingerprint": "0b5ec9cf8111b757a58bedbb528fe5769c6729d63fada5404c08179e9aaaa93b",
+        "source": "adbe9992abb2397e62e4cd85cc0a5583c90e8584878de77a36c47d1eb398127d",
+        "artifact": "4f181d1e43cf09560443f533e1d08e17b96e370b4a4061cd6f2a9e35dd4642fd",
+        "log": "OneYMountainExtraction-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y02g": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMountainLayerSyntax": {
+        "fingerprint": "cb5ba9b68279a8ef1ba572d89efb279e0a157dcefbfd2c89b55e9ce55d2e1343",
+        "source": "a9bb700384df35f6bc8e6217d76fed71c2b9f8ae6d703cbfa5cc2d6305479e25",
+        "artifact": "85b72e551112ccb982bab53c5707ae3b304d8771aab1061944020d1f9d8cea1e",
+        "log": "OneYMountainLayerSyntax-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYMountainLayers": {
+        "fingerprint": "08259e594a2c1d73986581a7f5f48db8f8c64f510d11dab68d79747ebf2bc191",
+        "source": "77518fbbfc536201c460a098d204ea08f059e84fafc5de38cf8936d6595ddeea",
+        "artifact": "d11167539c51d7b1c83aa7a80ddff92b2d19e1cc9a2d751a6b5c6484d0eeb8b5",
+        "log": "OneYMountainLayers-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y03d": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMatrixParents": {
+        "fingerprint": "700624a538560fd3aca13c057dbbddfb40d7956c7e1aef39601fc25acb5e49dc",
+        "source": "8bc8c221245079723f10c9e5fb8ebb2335a9563e8d2d866fbd71488bed60ea30",
+        "artifact": "a76a276ef9eed2662fe60c237fdce7d8590e6babb1dc53e4e1be78058df081c1",
+        "log": "OneYMatrixParents-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y03e": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYSelectionOrder": {
+        "fingerprint": "996d1f3937ca00b0a538bd24e800de7ef4ce26f0b2687e9b6939203feb65e638",
+        "source": "a25ad49f8eb1a8790fe266b79cde076ae10b276792aa746a4fd948a725b69832",
+        "artifact": "466b3bc1edc13cdc0d70a336ca2c8a308290f22754bcef9185761b349a70da01",
+        "log": "OneYSelectionOrder-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYSelectionDepth": {
+        "fingerprint": "0d35a052f96604c9bb252a795f26b3bc8fdec377223e5cc566bf1e6a2fa4cff0",
+        "source": "597abee03f91af1012f3eef305f74e23649e005934e3e69b08a940c418ec82f1",
+        "artifact": "6ed7b3c3311c79fcb4ba0af6097eeae9d556895b37c40fec650a146102ceae3a",
+        "log": "OneYSelectionDepth-check.log",
+        "log_sha256": "90587fd249d7b1b273a23333b206139110b7cc733e53992a0e6566aae6dfbeee",
+        "warnings": "KP1Y/OneYSelectionDepth.lean:47:86: warning: Variable name `hM` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hM\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`"
+      },
+      "KP1Y.OneYDepthValues": {
+        "fingerprint": "8e8cd1a6d96d4aacbefae5e6a7a7e2d1e125d121472480655a86cad7b0545ab8",
+        "source": "2832018c6319ae49f3122d414af1d724d09dbaa5edfe81e89b10ea95a15b2f0b",
+        "artifact": "b8b9d214adff88067aa21e3e6dcd5ad46a7d3d6adaf3d8e1d31c45aff98dc975",
+        "log": "OneYDepthValues-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y03g": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYMatrixStructuralDefs": {
+        "fingerprint": "1fff899a0393c1ab83c37f8e83364c2006143b3379f262f6ae817b6363d704d4",
+        "source": "ddc97e2339c6159f356bfe1634a6c1e3c6394586952aed8d264e1890c4e57383",
+        "artifact": "bc4d4c0983ec77957473d65d571d73a4ae5ead3b15656a00e88434e0f0b63a7d",
+        "log": "OneYMatrixStructuralDefs-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y03i": {
+    "at": "2026-09-13T12:39:41+00:00",
+    "basis": "worker交接报告（DepthValues由root本次单模块观察exit0）与冻结源码/依赖/产物/日志指纹；尚未进入新阶段审计",
+    "modules": {
+      "KP1Y.OneYForestEmbedding": {
+        "fingerprint": "5db2cf66c9ad0633536f3aa2c7fbc4b7b87f6acf2773c09934a6606ff5b5d365",
+        "source": "54bbc21a9e1ca8f02523cd10f4b3eccdef24bf396d5ab7e803f33323c30e68b9",
+        "artifact": "33ff4f7acfeb11279fef53433e7fe433500ea624e70f67b67409374a8c8ac560",
+        "log": "OneYForestEmbedding-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y02c": {
+    "at": "2026-09-13T12:50:53+00:00",
+    "basis": "worker已报告最终单模块exit0，绑定冻结源码/依赖/产物/日志指纹；尚待批次集成与审计",
+    "modules": {
+      "KP1Y.OneYExtractionBounds": {
+        "fingerprint": "2c60352d3b7d1f7a3e224711f990d36fb2090c014a8dff2ae1dcad3702dd5efa",
+        "source": "5623845b78c79a026abf439852f58d21621db9b1723131fa4dafe4cfcfb9ebef",
+        "artifact": "ef1a467b46720ee81873e52726f6e76432cecca281c839b8ece76a06e350d87c",
+        "log": "OneYExtractionBounds-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y02j": {
+    "at": "2026-09-13T12:50:53+00:00",
+    "basis": "worker已报告最终单模块exit0，绑定冻结源码/依赖/产物/日志指纹；尚待批次集成与审计",
+    "modules": {
+      "KP1Y.OneYFiniteFilter": {
+        "fingerprint": "022b5b610966f6720a5a6a15bcc6df5dc4635f9eda0c8d7654f2ccd92aaeefe4",
+        "source": "eb0180620e0236ee44cf6147c6995b2d0b196c79231ec50831a2fb01754363a0",
+        "artifact": "b37b12c27b4189bfddb4f2ec5155121b9e5e33a24dcff5a31a065fafdd035b6b",
+        "log": "OneYFiniteFilter-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y04a": {
+    "at": "2026-09-13T16:13:47+00:00",
+    "basis": "worker最终单模块检查交付与当前冻结指纹；等待协调者阶段集成",
+    "modules": {
+      "KP1Y.OneYCopyTower": {
+        "fingerprint": "a780222538bef7298e9556554ecd15c379215cf1481e405e39454870d42ec01c",
+        "source": "8b512ac890ae86aea353c1d6c9dffd30c997446c9cf58174dd6f2dd5b41f6902",
+        "artifact": "f0457fa16e10ce15df102bcaadca079bb1957de34e1eb6a00413733afe578cdf",
+        "log": "OneYCopyTower-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y05r": {
+    "at": "2026-09-13T16:13:47+00:00",
+    "basis": "worker最终单模块检查交付与当前冻结指纹；等待协调者阶段集成",
+    "modules": {
+      "KP1Y.OneYMountainReconstruction": {
+        "fingerprint": "88f16aa8327611ccd2f0b0827fa69f10570a9d1741003006b3c4615e9c72fcdb",
+        "source": "3ddd41d6b072fd965839280eeb2f053ad75162bcf9b97f990bcd4aa9f1e5f0c5",
+        "artifact": "f06ee3715c7f009ad0cd46db3167a3250bb10649c2202f910456bccc05485457",
+        "log": "OneYMountainReconstruction-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYTowerReconstruction": {
+        "fingerprint": "24262cd802107c4d2a7ee3279c9ef14e6ed82d9f49a3090f8144ee7e03634fec",
+        "source": "3ff293b69d5cd1833ee6536c564a177234f7db42090ef091fec92e11c5c830eb",
+        "artifact": "449cfa85f1991ae7c73a76354d44d59bb6bd2a2c3367268a86ebca1582c0af75",
+        "log": "OneYTowerReconstruction-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y03k": {
+    "at": "2026-09-13T16:49:15+00:00",
+    "basis": "已冻结worker完整交付及现有单模块产物/空日志；ForestDecoratedOrder尚未纳入第8批根审计，其余已集成",
+    "modules": {
+      "KP1Y.OneYActiveFrame": {
+        "fingerprint": "c677a5f081b4587c1a3b196c1f9c2c68ad57f9ab78b8d75cc106da2f0664e611",
+        "source": "0a4ee35255798681b9d48a8b06d8155376002ede40090b72e3cae88274b5ab8e",
+        "artifact": "5a28ed9bf83d0d3e51649f4a69f35ace0fcba67e8fc56a458b1da15e7c85d4bb",
+        "log": "OneYActiveFrame-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYSparseDepth": {
+        "fingerprint": "5374ee136159b51cbd1c82cff82ee5a61a5533fd22966642a00b1b4f3cbf430f",
+        "source": "c38fba281594059b2591fd85759d7421f0a018336ce90c2515bc1a10797c77d0",
+        "artifact": "324e59536f8f4b512709f028a9590a5bdf0ea3e682ac2004ff8dbc5c0244b56d",
+        "log": "OneYSparseDepth-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYActiveFrameTransport": {
+        "fingerprint": "e027b569286afc414aaddf328421d6b127da8b91605ef196d13205264a64f059",
+        "source": "f6d105abf6dbaa92deb2b924bc84757e9b6149a5de0c53b86d9044eb2af6d992",
+        "artifact": "77ca99202ecd84842a775627f5a76fbd6a72202e5d2993a4e9f1a5d2a4e2618e",
+        "log": "OneYActiveFrameTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYNumericDecoratedOrder": {
+        "fingerprint": "253796cbed8c5817029d17bf6aca0bad011c13055c7164d99166f823c573a520",
+        "source": "48124011b026bd3501925991b3dec3e20fd5ae6a03837c0eb04a11c6461f9d6f",
+        "artifact": "456d53a97d076f3e4023873ec849485f4eb66230124ed1f15a47b244acf9cdc6",
+        "log": "OneYNumericDecoratedOrder-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYForestDecoratedOrder": {
+        "fingerprint": "e31a501c37fbee2189752112ce1a202e47a2901cccbd6340a474bc44acedcbe2",
+        "source": "393d38833f439bdf778c032d4880c7dd5e81de74718080a4ee4deb13f08c2766",
+        "artifact": "e872bf6c9e673f36736aa2afd4345adac045844e12677c8b1026cd44243a3e3f",
+        "log": "OneYForestDecoratedOrder-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y05c": {
+    "at": "2026-09-13T16:50:24+00:00",
+    "basis": "worker完整冻结交付，三模块分别--emit exit0且日志空，尚未纳入第8批根审计",
+    "modules": {
+      "KP1Y.OneYExpansionCore": {
+        "fingerprint": "22882bf7a0d5d147cce1ccef40e2acecb64f18f83d0317e6cae8205394d0a427",
+        "source": "c88dc70130459a68bbd0d73f9b9e75b3735c8dbc487aef5d442751ac339bfdd5",
+        "artifact": "1f4e77425a37e68a4591672cf2bd915a96737871de7c3560dcb7161a24c08f1b",
+        "log": "OneYExpansionCore-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYExpansionPrefix": {
+        "fingerprint": "22e646347d658a8b4c4eebe2bf52be1d821b39552fb4f3613898572103522b92",
+        "source": "c730f14098fe214f3b565ae32ccd0812eb9942b45881ec20a09225ec564aee83",
+        "artifact": "a365e643132930aaee7f498d111fea0cd5c6e584ee246b01574e9b35998787b9",
+        "log": "OneYExpansionPrefix-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYExpansion": {
+        "fingerprint": "3d968ce0917c2aeb3c2fba48ffc7985339e922f95a03a3b02f3dda1d381e5490",
+        "source": "9e2c9847e407f7a42ed3439d62703c7f9ef54376c479bad07568945d358a7b11",
+        "artifact": "000fb38d199711feb7bb3ab6c12af07cda166877e8fb32ec3d34764edf6471a7",
+        "log": "OneYExpansion-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y04c": {
+    "at": "2026-09-13T17:32:46+00:00",
+    "basis": "Y04c整组完整冻结交付，所列模块最终单模块--emit exit0且空日志；新Syntax/VirtualNeeds尚待下一批集成",
+    "modules": {
+      "KP1Y.OneYAtomTransport": {
+        "fingerprint": "bd4bede7f740c29fc24fae7c63c8fe66d358e3da5d30d11177029540abc639cd",
+        "source": "7d448a45e1ec8a0dc1b4a495be4b0bbd30a4055b579d99d659e958377e598ac1",
+        "artifact": "c08113386299ff8cd6ca4501ca579dde70a32dc80e024f348452c9d3358b79c4",
+        "log": "OneYAtomTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyInvariant": {
+        "fingerprint": "23bd8cd5488252c6176ea74445e089e268d9d12a87f39519da0537d38908a82f",
+        "source": "368b10c94179f62c98bbbbde2c4479b51edbc9f8818a41467fcff42c39e4dfe2",
+        "artifact": "340909aa54553777b4585f936c1a4aa1b5aa0e12bbf4be5a9b67f40a1e5d8d97",
+        "log": "OneYCopyInvariant-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyIterationFacts": {
+        "fingerprint": "3ce42df083e8feec1129e0a4d3ab12b2f8616f38088f721a4626ab5b76a57c2a",
+        "source": "5421b84c27e6fb88e228210db1facfdf4255bd025a42d99ccd130cd4dfc1681e",
+        "artifact": "d7a6c5cc034225c804403b1df6ab431514648ca813be701d1f222f7641205bff",
+        "log": "OneYCopyIterationFacts-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyNeeds": {
+        "fingerprint": "ca04a042eed1754cdec250f9791174aad61bd9baed9cc9a1fdf308c8fbdd0466",
+        "source": "6305a906c570f9989c0a7fc052b3811223d87c01d0bb564763e8a3d2dcb02ae2",
+        "artifact": "4ea83b23c7bdb4811acfbbbda9c12710065ddaf8dbf4defd4b4bcc8095e4e436",
+        "log": "OneYCopyNeeds-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyNeedsSyntax": {
+        "fingerprint": "0ce8a710a46131fdeb6a2a08e9738389bd04063893665788cad56d8ea8e3419e",
+        "source": "2d2b80092c97cd23a0f52b103972c6c1c8ed1211f415fd66a342d02b93509856",
+        "artifact": "3a5fb535f4e729dbe3662af7e9c7e1384461035416b1a0416096d972cde45bbd",
+        "log": "OneYCopyNeedsSyntax-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYVirtualNeeds": {
+        "fingerprint": "ed4b20e34e04c66cec51e3c628647581b34d4fac30ae4754d4d86722718c682b",
+        "source": "e27dd41f7d505993ea0f591f0dfa7ac172143a19d907f40ff7edfb72bcfbe985",
+        "artifact": "18f11cf95de5fc33f1c6039ad45f0f53cb14ac4206b1c9812594464a7f035938",
+        "log": "OneYVirtualNeeds-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y05n": {
+    "at": "2026-09-13T18:18:12+00:00",
+    "basis": "整组冻结交付，最终单模块--emit exit0/空日志；部分新模块尚待后续冻结批次集成",
+    "modules": {
+      "KP1Y.OneYCopyNestingDefs": {
+        "fingerprint": "f95679ec556838731f174a6346d3fb942ed6174bc7eaaa7f8768d024749b39ec",
+        "source": "56f658ef7c070e2d1166c3755f23781f841d33569d2b9f01a792c2ed88a0b2e6",
+        "artifact": "5803c2a6894a151b95d754a6bb2594b5a20c7a86e679d1e8370e5ceb6ec5ff1b",
+        "log": "OneYCopyNestingDefs-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyAncestryTransport": {
+        "fingerprint": "1d9a2af2061d1d755f8cb50b6f6235d160f20d8b66c6d7797cc892276f23670b",
+        "source": "617378c1768d0e0684431f5a968b83d8a276516ffe40f1af5002769566471c44",
+        "artifact": "927968fffa8d631d70d82f95f66dabc9ea3c278fb5d7192393932d0352810208",
+        "log": "OneYCopyAncestryTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYOrdinaryCopyNesting": {
+        "fingerprint": "7ea25c4bc23e2edc82b4b4213df858419456a348f816c067ea2f0cfb3dd33146",
+        "source": "7eeac3b28b0a07340f2c5c0888c3bd4647a35809880dc833aa25d061ea0d9418",
+        "artifact": "80cef35985887c6ace0b5943aafafe0f7f9c1d364dd9bed4aa91efae01332565",
+        "log": "OneYOrdinaryCopyNesting-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYTerminalCopyNesting": {
+        "fingerprint": "e919e8ca73684ab992e4d06f173a7892ae82d0e33a3f41465efd1d8d21eafd2e",
+        "source": "7e44376922ce83d916a4ae6db4ac61cd79d01ae9a8cd5de1b9c099d95c3fad87",
+        "artifact": "9756c9df4b89a5c31433875a9b61585388c285ea8c9585419cd02a65d4a12f60",
+        "log": "OneYTerminalCopyNesting-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYLowerCopyNesting": {
+        "fingerprint": "a4249f18b1d3aa2150cd3b95eb4e70d232852e3bf02aee78ef4e657e3880b1ce",
+        "source": "8bfb623510ce948c8c526c8e652ff321e990bf43ce5fc0de289c72d5669fd0b5",
+        "artifact": "c8f8bb26a475361818ff028dda81e688c961fa7c67b50a192a98b80d7752b00f",
+        "log": "OneYLowerCopyNesting-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYCopyNesting": {
+        "fingerprint": "34779d910d7e6cae86306ee56c67e7b6ccc6db8893d62d98770ce824baf41248",
+        "source": "4dcb24b190e58430b17bdb8961f02228330f38dc114f0c41eccc24698d0ca74d",
+        "artifact": "78044aae47be149cd77b39dfffe2442f54a30b307d9c31ea01b2f1473125dd0a",
+        "log": "OneYCopyNesting-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYLowerRowShiftSuccessor": {
+        "fingerprint": "7cbbf7fb241da85ff2d8157b1eb68c23ae44695632aa4cfae26c4a82041780b7",
+        "source": "6b802b57308dc391a24940e25d34fbf1fd942f25fb651179860f1f34267884bf",
+        "artifact": "4110fcde6fc69aeac94ed2b1b0f672ddecc56011802d1f74c1ee4bc6eaaee367",
+        "log": "OneYLowerRowShiftSuccessor-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  },
+  "Y05o": {
+    "at": "2026-09-13T18:18:12+00:00",
+    "basis": "整组冻结交付，最终单模块--emit exit0/空日志；部分新模块尚待后续冻结批次集成",
+    "modules": {
+      "KP1Y.OneYOrdinaryForestTransport": {
+        "fingerprint": "ee60f844ad2e5a0843c9a7ed748e3f865c74d98691e5aaf95d0e9fd8a843947b",
+        "source": "a9960e05353874130bd9dcf740891406e61a1afafc2a9668489c114bfafc6982",
+        "artifact": "424b5f23545aaff1b9d563091190b1e8175beadf84bedf8f5ad559c1bc0633b2",
+        "log": "OneYOrdinaryForestTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYOrdinaryValueTransport": {
+        "fingerprint": "40453435d23a283056d075dafe0fb61ad14e79212d7207b1f778befb5d89c012",
+        "source": "5df397d12318e2c5bc36a84333ed10667e76683a5fc8b3451ab7faeb3d9d67db",
+        "artifact": "97a72fe7c7caa5e2fd1cec3a8dea1d733102e6d772b302f1dcf543b55501954e",
+        "log": "OneYOrdinaryValueTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYOrdinaryPseudoTransport": {
+        "fingerprint": "099e407feafd6ab4c434b1425cc3a6386457d3eb07797c7f1d2a000fc0bd8c15",
+        "source": "25558bb19468ec57842e8dbff247eb34f69d697773c2529252c813c9c014b3f9",
+        "artifact": "573fd657d9b442c082bcada728134c413c0a66c393de5cd05e649001e34f9db9",
+        "log": "OneYOrdinaryPseudoTransport-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      },
+      "KP1Y.OneYOrdinaryCanonical": {
+        "fingerprint": "f5b67280903cb78137acdf3f953c52b07856afc7eb923ad18bdf1a2f9a7e0f7a",
+        "source": "e77476775addb61c32f21cb6155a55b63d3351326ae9ab865601fd70e0280354",
+        "artifact": "74b8b9b6fde8d8395807fbc3991ee07b1fc737c076090b77341e5d0748dc7d9a",
+        "log": "OneYOrdinaryCanonical-check.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": ""
+      }
+    }
+  }
+}
